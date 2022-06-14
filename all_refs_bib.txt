@@ -1,0 +1,2315 @@
+@article{10.1130/G30606.1,
+    author = {West, Michael E. and Larsen, Christopher F. and Truffer, Martin and O'Neel, Shad and LeBlanc, Laura},
+    title = "{Glacier microseismicity}",
+    journal = {Geology},
+    volume = {38},
+    number = {4},
+    pages = {319-322},
+    year = {2010},
+    month = {04},
+    doi = {10.1130/G30606.1},
+}
+
+@article {Muller1299,
+	author = {M{\"u}ller, Christian and Schlindwein, Vera and Eckstaller, Alfons and Miller, Heinrich},
+	title = {Singing Icebergs},
+	volume = {310},
+	number = {5752},
+	pages = {1299--1299},
+	year = {2005},
+	doi = {10.1126/science.1117145},
+	publisher = {American Association for the Advancement of Science},
+	journal = {Science}
+}
+
+@article{helmstetter2015intermediate,
+  title={Intermediate-depth icequakes and harmonic tremor in an Alpine glacier (Glacier d'Argenti{\`e}re, France): Evidence for hydraulic fracturing?},
+  author={Helmstetter, Agnes and Moreau, Luc and Nicolas, Barbara and Comon, Pierre and Gay, Michel},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={120},
+  number={3},
+  pages={402--416},
+  year={2015},
+  publisher={Wiley Online Library}
+}
+
+@article{carmichael2012seismic,
+  title={Seismic multiplet response triggered by melt at Blood Falls, Taylor Glacier, Antarctica},
+  author={Carmichael, Joshua D and Pettit, Erin C and Hoffman, Matt and Fountain, Andrew and Hallet, Bernard},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={117},
+  number={F3},
+  year={2012},
+  publisher={Wiley Online Library}
+}
+
+@article{walter2008basal,
+  title={Basal icequakes during changing subglacial water pressures beneath Gornergletscher, Switzerland},
+  author={Walter, Fabian and Deichmann, Nicholas and Funk, Martin},
+  journal={Journal of Glaciology},
+  volume={54},
+  number={186},
+  pages={511--521},
+  year={2008},
+  publisher={Cambridge University Press}
+}
+
+
+@article{moore2013glacier,
+  title={Glacier slip and seismicity induced by surface melt},
+  author={Moore, Peter L and Winberry, J Paul and Iverson, Neal R and Christianson, Knut A and Anandakrishnan, Sridhar and Jackson, Miriam and Mathison, Mark E and Cohen, Denis},
+  journal={Geology},
+  volume={41},
+  number={12},
+  pages={1247--1250},
+  year={2013},
+  publisher={Geological Society of America}
+}
+
+
+@article{nishio1983studies,
+  title={Studies on thermally induced fractures and snowquakes of polar snow cover},
+  author={Nishio, Fumihiko and others},
+  year={1983}
+}
+
+
+@article{faillettaz2011numerical,
+  title={Numerical modeling of a gravity-driven instability of a cold hanging glacier: reanalysis of the 1895 break-off of Altelsgletscher, Switzerland},
+  author={Faillettaz, J{\'e}rome and Sornette, Didier and Funk, Martin},
+  journal={Journal of Glaciology},
+  volume={57},
+  number={205},
+  pages={817--831},
+  year={2011},
+  publisher={Cambridge University Press}
+}
+
+@article{faillettaz2011icequakes,
+  title={Icequakes coupled with surface displacements for predicting glacier break-off},
+  author={Faillettaz, Jerome and Funk, Martin and Sornette, Didier},
+  journal={Journal of Glaciology},
+  volume={57},
+  number={203},
+  pages={453--460},
+  year={2011},
+  publisher={Cambridge University Press}
+}
+
+
+
+@article{harrison1986short,
+  title={Short period motion events on Variegated Glacier as observed by automatic photography and seismic methods},
+  author={Harrison, WD and Raymond, CF and MacKeith, P},
+  journal={Annals of Glaciology},
+  volume={8},
+  pages={82--89},
+  year={1986},
+  publisher={Cambridge University Press}
+}
+
+
+
+@article{sinadinovski1999effective,
+  title={Effective discrimination of icequakes on seismic records from Mawson station},
+  author={Sinadinovski, C and Muirhead, K and Leonard, M and Spiliopoulos, S and Jepsen, D},
+  journal={Physics of the earth and planetary interiors},
+  volume={113},
+  number={1-4},
+  pages={203--211},
+  year={1999},
+  publisher={Elsevier}
+}
+
+
+
+@article{crary1955,
+    author = {Crary, A. P.},
+    title = "{A brief study of ice tremors*}",
+    journal = {Bulletin of the Seismological Society of America},
+    volume = {45},
+    number = {1},
+    pages = {1-9},
+    year = {1955},
+    month = {01},
+    issn = {0037-1106},
+    eprint = {https://pubs.geoscienceworld.org/bssa/article-pdf/45/1/1/2691976/BSSA0450010001.pdf},
+}
+
+
+@article{jonsdottir2009glacial,
+  title={Glacial long period seismic events at Katla volcano, Iceland},
+  author={J{\'o}nsd{\'o}ttir, Krist{\'\i}n and Roberts, Roland and Pohjola, Veijo and Lund, Bj{\"o}rn and Shomali, Zaher Hossein and Tryggvason, Ari and B{\"o}{\dh}varsson, Reynir},
+  journal={Geophysical Research Letters},
+  volume={36},
+  number={11},
+  year={2009},
+  publisher={Wiley Online Library}
+}
+
+
+@article{metaxian2003seismicity,
+  title={Seismicity related to the glacier of Cotopaxi Volcano, Ecuador},
+  author={M{\'e}taxian, Jean-Philippe and Araujo, Sebasti{\'a}n and Mora, Mauricio and Lesage, Philippe},
+  journal={Geophysical Research Letters},
+  volume={30},
+  number={9},
+  year={2003},
+  publisher={Wiley Online Library}
+}
+
+@article{pomeroy2013search,
+  title={The search for seismic signatures of movement at the glacier bed in a polythermal valley glacier},
+  author={Pomeroy, Joseph and Brisbourne, Alex and Evans, Jeffrey and Graham, David},
+  journal={Annals of Glaciology},
+  volume={54},
+  number={64},
+  pages={149--156},
+  year={2013},
+  publisher={Cambridge University Press}
+}
+
+@article{roux2008microseismic,
+  title={Microseismic activity within a serac zone in an alpine glacier (Glacier d’Argentiere, Mont Blanc, France)},
+  author={Roux, Pierre-Fran{\c{c}}ois and Marsan, David and M{\'e}taxian, Jean-Philippe and O’Brien, Gareth and Moreau, Luc},
+  journal={Journal of Glaciology},
+  volume={54},
+  number={184},
+  pages={157--168},
+  year={2008},
+  publisher={Cambridge University Press}
+}
+
+
+@article{thelen2013shallow,
+  title={Shallow repeating seismic events under an alpine glacier at Mount Rainier, Washington, USA},
+  author={Thelen, Weston A and Allstadt, Kate and De Angelis, Silvio and Malone, Stephen D and Moran, Seth C and Vidale, John},
+  journal={Journal of Glaciology},
+  volume={59},
+  number={214},
+  pages={345--356},
+  year={2013},
+  publisher={Cambridge University Press}
+}
+
+@article{wiens2008simultaneous,
+  title={Simultaneous teleseismic and geodetic observations of the stick--slip motion of an Antarctic ice stream},
+  author={Wiens, Douglas A and Anandakrishnan, Sridhar and Winberry, J Paul and King, Matt A},
+  journal={Nature},
+  volume={453},
+  number={7196},
+  pages={770},
+  year={2008},
+  publisher={Nature Publishing Group}
+}
+
+@article{walter2010iceberg,
+  title={Iceberg calving during transition from grounded to floating ice: Columbia Glacier, Alaska},
+  author={Walter, Fabian and O'Neel, Shad and McNamara, Daniel and Pfeffer, WT and Bassis, Jeremy N and Fricker, Helen Amanda},
+  journal={Geophysical Research Letters},
+  volume={37},
+  number={15},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+@article{o2010iceberg,
+  title={Iceberg calving as a primary source of regional-scale glacier-generated seismicity in the St. Elias Mountains, Alaska},
+  author={O'Neel, Shad and Larsen, Christopher F and Rupert, Natalia and Hansen, Roger},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={115},
+  number={F4},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+@article{winberry2009basal,
+  title={Basal mechanics of ice streams: Insights from the stick-slip motion of Whillans Ice Stream, West Antarctica},
+  author={Winberry, J Paul and Anandakrishnan, Sridhar and Alley, Richard B and Bindschadler, Robert A and King, Matt A},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={114},
+  number={F1},
+  year={2009},
+  publisher={Wiley Online Library}
+}
+
+@article{winberry2011dynamics,
+  title={Dynamics of stick--slip motion, Whillans Ice Stream, Antarctica},
+  author={Winberry, J Paul and Anandakrishnan, Sridhar and Wiens, Douglas A and Alley, Richard B and Christianson, Knut},
+  journal={Earth and Planetary Science Letters},
+  volume={305},
+  number={3-4},
+  pages={283--289},
+  year={2011},
+  publisher={Elsevier}
+}
+
+@article{pratt2014seismic,
+  title={Seismic and geodetic evidence for grounding-line control of Whillans Ice Stream stick-slip events},
+  author={Pratt, Martin J and Winberry, J Paul and Wiens, Douglas A and Anandakrishnan, Sridhar and Alley, Richard B},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={119},
+  number={2},
+  pages={333--348},
+  year={2014},
+  publisher={Wiley Online Library}
+}
+
+@article{bartholomaus2012calving,
+  title={Calving seismicity from iceberg--sea surface interactions},
+  author={Bartholomaus, TC and Larsen, Ch F and O'Neel, Shad and West, ME},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={117},
+  number={F4},
+  year={2012},
+  publisher={Wiley Online Library}
+}
+
+@article{canassy2012seismic,
+  title={Seismic activity and surface motion of a steep temperate glacier: a study on Triftgletscher, Switzerland},
+  author={Canassy, Pierre Dalban and Faillettaz, Jerome and Walter, Fabian and Huss, Matthias},
+  journal={Journal of Glaciology},
+  volume={58},
+  number={209},
+  pages={513--528},
+  year={2012},
+  publisher={Cambridge University Press}
+}
+
+@article{minowa_podolskiy_sugiyama_2019, 
+title={Tide-modulated ice motion and seismicity of a floating glacier tongue in East Antarctica}, 
+volume={60}, 
+DOI={10.1017/aog.2019.25}, 
+number={79}, 
+journal={Annals of Glaciology}, 
+publisher={Cambridge University Press}, 
+author={Minowa, Masahiro and Podolskiy, Evgeny A. and Sugiyama, Shin}, 
+year={2019}, 
+pages={57–67}
+}
+
+
+
+@article{lipovsky_meyer_zoet_mccarthy_hansen_rempel_gimbert_2019,
+title={Glacier sliding, seismicity and sediment entrainment},
+volume={60}, 
+DOI={10.1017/aog.2019.24}, 
+number={79}, 
+journal={Annals of Glaciology}, 
+publisher={Cambridge University Press}, 
+author={Lipovsky, Bradley Paul and Meyer, Colin R. and Zoet, Lucas K. and McCarthy, Christine and Hansen, Dougal D. and Rempel, Alan W. and Gimbert, Florent}, 
+year={2019}, 
+pages={182–192}
+}
+
+@article{taylor-offord_horgan_townend_winberry_2019,
+title={Seismic observations of crevasse growth following rain-induced glacier acceleration, Haupapa/Tasman Glacier, New Zealand},
+volume={60},
+DOI={10.1017/aog.2019.20},
+number={79},
+journal={Annals of Glaciology},
+publisher={Cambridge University Press},
+author={Taylor-Offord, Samuel and Horgan, Huw and Townend, John and Winberry, J. Paul},
+year={2019},
+pages={14–22}
+}
+
+@article{carmichael_2019,
+title={Narrowband signals recorded near a moulin that are not moulin tremor: a cautionary short note}, 
+volume={60},
+DOI={10.1017/aog.2019.23},
+number={79},
+journal={Annals of Glaciology},
+publisher={Cambridge University Press},
+author={Carmichael, Joshua D},
+year={2019}, 
+pages={231–237}
+}
+@article{roosli2014sustained,
+  title={Sustained seismic tremors and icequakes detected in the ablation zone of the Greenland ice sheet},
+  author={R{\"o}{\"o}sli, Claudia and Walter, Fabian and Husen, Stephan and Andrews, Lauren C and L{\"u}thi, Martin P and Catania, Ginny A and Kissling, Edi},
+  journal={Journal of Glaciology},
+  volume={60},
+  number={221},
+  pages={563--575},
+  year={2014},
+  publisher={Cambridge University Press}
+}
+
+
+@article{macayeal2009seismic,
+  title={Seismic observations of glaciogenic ocean waves (micro-tsunamis) on icebergs and ice shelves},
+  author={MacAYEAL, Douglas R and Okal, Emile A and Aster, Richard C and Bassis, Jeremy N},
+  journal={Journal of Glaciology},
+  volume={55},
+  number={190},
+  pages={193--206},
+  year={2009},
+  publisher={Cambridge University Press}
+}
+
+
+@article{amundson2008glacier,
+  title={Glacier, fjord, and seismic response to recent large calving events, Jakobshavn Isbr{\ae}, Greenland},
+  author={Amundson, JM and Truffer, M and L{\"u}thi, Martin P and Fahnestock, M and West, M and Motyka, RJ},
+  journal={Geophysical Research Letters},
+  volume={35},
+  number={22},
+  year={2008},
+  publisher={Wiley Online Library}
+}
+
+@article{rial2009glacial,
+  title={Glacial rumblings from Jakobshavn ice stream, Greenland},
+  author={Rial, JA and Tang, C and Steffen, K},
+  journal={Journal of Glaciology},
+  volume={55},
+  number={191},
+  pages={389--399},
+  year={2009},
+  publisher={Cambridge University Press}
+}
+
+@article{zoet2012motion,
+  title={Motion of an Antarctic glacier by repeated tidally modulated earthquakes},
+  author={Zoet, Lucas K and Anandakrishnan, Sridhar and Alley, Richard B and Nyblade, Andrew A and Wiens, Douglas A},
+  journal={Nature Geoscience},
+  volume={5},
+  number={9},
+  pages={623},
+  year={2012},
+  publisher={Nature Publishing Group}
+}
+
+@article{doi:10.1146/annurev-earth-040809-152414,
+author = {Nettles, Meredith and Ekström, Göran},
+title = {Glacial Earthquakes in Greenland and Antarctica},
+journal = {Annual Review of Earth and Planetary Sciences},
+volume = {38},
+number = {1},
+pages = {467-491},
+year = {2010},
+doi = {10.1146/annurev-earth-040809-152414},
+}
+@article{hudson_smith_brisbourne_white_2019, 
+    title={Automated detection of basal icequakes and discrimination from surface crevassing}, 
+    volume={60}, 
+    doi={10.1017/aog.2019.18}, 
+    number={79}, 
+    journal={Annals of Glaciology}, 
+    publisher={Cambridge University Press}, 
+    author={Hudson, Thomas S. and Smith, Jonathan and Brisbourne, Alex M. and White, Robert S.}, 
+    year={2019}, 
+    pages={167–181}
+    }
+
+@article{peng2014antarctic,
+  title={Antarctic icequakes triggered by the 2010 Maule earthquake in Chile},
+  author={Peng, Zhigang and Walter, Jacob I and Aster, Richard C and Nyblade, Andrew and Wiens, Douglas A and Anandakrishnan, Sridhar},
+  journal={Nature Geoscience},
+  volume={7},
+  number={9},
+  pages={677},
+  year={2014},
+  publisher={Nature Publishing Group}
+}
+
+
+@article{kanao2012characteristic,
+  title={Characteristic seismic waves associated with cryosphere dynamics in Eastern Dronning Maud Land, East Antarctica},
+  author={Kanao, Masaki and Yamada, Akira and Yamashita, Mikiya},
+  journal={International Journal of Geophysics},
+  volume={2012},
+  year={2012},
+  publisher={Hindawi Publishing Corporation}
+}
+
+@article{o2007source,
+  title={Source mechanics for monochromatic icequakes produced during iceberg calving at Columbia Glacier, AK},
+  author={O'Neel, Shad and Pfeffer, WT},
+  journal={Geophysical Research Letters},
+  volume={34},
+  number={22},
+  year={2007},
+  publisher={Wiley Online Library}
+}
+
+@article{gaull1992seismicity,
+  title={Seismicity associated with icebergs calving from glaciers near Mawson, East Antarctica},
+  author={Gaull, BA and Adamson, DA and Pickard, J},
+  journal={Australian Journal of Earth Sciences},
+  volume={39},
+  number={4},
+  pages={473--480},
+  year={1992},
+  publisher={Taylor \& Francis}
+}
+
+{doi:10.1029/2011JF002221,
+    author = {Carmichael, Joshua D. and Pettit, Erin C. and Hoffman, Matt and Fountain, Andrew and Hallet, Bernard},
+    title = {Seismic multiplet response triggered by melt at Blood Falls, Taylor Glacier, Antarctica},
+    journal = {Journal of Geophysical Research: Earth Surface},
+    volume = {117},
+    number = {F3},
+    pages = {},
+    keywords = {Blood Falls, Taylor Glacier, cross correlation, icequakes, multiplets, surface melt},
+    doi = {10.1029/2011JF002221},
+    year = {2012}
+}
+@article{doi:10.1029/2011GL047525,
+    author = {Grob, M. and Maggi, A. and Stutzmann, E.},
+    title = {Observations of the seasonality of the Antarctic microseismic signal, and its association to sea ice variability},
+    journal = {Geophysical Research Letters},
+    volume = {38},
+    number = {11},
+    doi = {10.1029/2011GL047525},
+}
+
+@article{doi:10.1002/2015GL064029,
+    author = {Hammer, Conny and Ohrnberger, Matthias and Schlindwein, Vera},
+    title = {Pattern of cryospheric seismic events observed at Ekström Ice Shelf, Antarctica},
+    journal = {Geophysical Research Letters},
+    volume = {42},
+    number = {10},
+    pages = {3936-3943},
+    keywords = {icequakes, detection},
+    doi = {10.1002/2015GL064029},
+    url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2015GL064029},
+}
+
+@article{doi:10.1002/jgrf.20124,
+    author = {Walter, Fabian and Dalban Canassy, Pierre and Husen, Stephan and Clinton, John F.},
+    title = {Deep icequakes: What happens at the base of Alpine glaciers?},
+    journal = {Journal of Geophysical Research: Earth Surface},
+    volume = {118},
+    number = {3},
+    pages = {1720-1728},
+    doi = {10.1002/jgrf.20124},
+    url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/jgrf.20124},
+    year = {2013}
+}
+
+
+@article{doi:10.1002/2014JF003086,
+    author = {Allstadt, Kate and Malone, Stephen D.},
+    title = {Swarms of repeating stick-slip icequakes triggered by snow loading at Mount Rainier volcano},
+    journal = {Journal of Geophysical Research: Earth Surface},
+    volume = {119},
+    number = {5},
+    pages = {1180-1203},
+    doi = {10.1002/2014JF003086},
+    url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2014JF003086},
+    year = {2014}
+    }
+
+@article{jones_kulessa_doyle_dow_hubbard_2013, 
+    title={An automated approach to the location of icequakes using seismic waveform amplitudes}, 
+    volume={54}, 
+    doi={10.3189/2013AoG64A074}, 
+    number={64}, 
+    journal={Annals of Glaciology}, 
+    publisher={Cambridge University Press}, 
+    author={Jones, G.A. and Kulessa, B. and Doyle, S.H. and Dow, C.F. and Hubbard, A.}, 
+    year={2013}, 
+    pages={1–9}
+    }
+
+@article{doi:10.1002/2013GL057814,
+    author = {Barruol, Guilhem and Cordier, Emmanuel and Bascou, Jérôme and Fontaine, Fabrice R. and Legrésy, Benoit and Lescarmontier, Lydie},
+    title = {Tide-induced microseismicity in the Mertz glacier grounding area, East Antarctica},
+    journal = {Geophysical Research Letters},
+    volume = {40},
+    number = {20},
+    pages = {5412-5416},
+    doi = {10.1002/2013GL057814},
+    year = {2013}
+}
+
+
+@article{Cichowicz1983,
+    author={Cichowicz, Artur},
+    title={Icequakes and glacier motion: The hans glacier, spitsbergen},
+    journal={pure and applied geophysics},
+    year={1983},
+    volume={121},
+    number={1},
+    pages={27--38},
+    doi={10.1007/BF02590118},
+}
+
+@article{doi:10.1029/JB093iB06p06615,
+    author = {Qamar, Anthony},
+    title = {Calving icebergs: A source of low-frequency seismic signals from Columbia Glacier, Alaska},
+    journal = {Journal of Geophysical Research: Solid Earth},
+    volume = {93},
+    number = {B6},
+    pages = {6615-6623},
+    doi = {10.1029/JB093iB06p06615},
+    year = {1988}
+}
+
+@article{vanwormer_berg_1973, 
+    title={Seismic Evidence for Glacier Motion}, 
+    volume={12}, 
+    doi={10.3189/S002214300003207X}, 
+    number={65}, 
+    journal={Journal of Glaciology}, 
+    publisher={Cambridge University Press}, 
+    author={VanWormer, Douglas and Berg, Eduard}, 
+    year={1973}, 
+    pages={259–265}
+}
+
+@article{osten-woldenburg_1990, 
+    title={Icequakes On Ekström Ice Shelf Near Atka Bay, Antarctica},
+    volume={36}, 
+    doi={10.3189/S0022143000005517}, 
+    number={122}, 
+    journal={Journal of Glaciology}, 
+    publisher={Cambridge University Press}, 
+    author={Osten-Woldenburg, H. Von Der}, 
+    year={1990}, 
+    pages={31–36}
+}
+
+
+@article{röthlisberg_1955, 
+title={Studies in Glacier Physics on the Penny Ice Cap, Baffin Island, 1953: Part III: Seismic Sounding}, 
+volume={2}, 
+doi={10.3189/002214355793702064}, 
+number={18}, 
+journal={Journal of Glaciology}, 
+publisher={Cambridge University Press}, 
+author={Röthlisberg, H.}, 
+year={1955}, 
+pages={539–552}
+}
+
+@article{paul2013nucleation,
+  title={Nucleation and seismic tremor associated with the glacial earthquakes of Whillans Ice Stream, Antarctica},
+  author={Paul Winberry, J and Anandakrishnan, Sridhar and Wiens, Douglas A and Alley, Richard B},
+  journal={Geophysical Research Letters},
+  volume={40},
+  number={2},
+  pages={312-315},
+  year={2013},
+  publisher={Wiley Online Library}
+}
+
+@article{barcheck2018implications,
+  title={Implications of basal micro-earthquakes and tremor for ice stream mechanics: Stick-slip basal sliding and till erosion},
+  author={Barcheck, C Grace and Tulaczyk, Slawek and Schwartz, Susan Y and Walter, Jacob I and Winberry, J Paul},
+  journal={Earth and Planetary Science Letters},
+  volume={486},
+  pages={54--60},
+  year={2018},
+  publisher={Elsevier}
+}
+
+
+@article{lipovsky2016tremor,
+  title={Tremor during ice-stream stick slip},
+  author={Lipovsky, BP and Dunham, EM},
+  journal={The Cryosphere},
+  volume={10},
+  number={1},
+  pages={385--399},
+  year={2016},
+  publisher={Copernicus GmbH}
+}
+
+@article{lombardi_gorodetskaya_barruol_camelbeeck_2019,
+title={Thermally induced icequakes detected on blue ice areas of the East Antarctic ice sheet}, 
+volume={60}, 
+DOI={10.1017/aog.2019.26},
+number={79}, 
+journal={Annals of Glaciology}, 
+publisher={Cambridge University Press}, 
+author={Lombardi, Denis and Gorodetskaya, Irina and Barruol, Guilhem and Camelbeeck, Thierry}, 
+year={2019}, 
+pages={45–56}
+}
+
+@article{neave1970icequakes,
+  title={Icequakes on the Athabasca glacier},
+  author={Neave, KG and Savage, JC},
+  journal={Journal of Geophysical Research},
+  volume={75},
+  number={8},
+  pages={1351--1362},
+  year={1970},
+  publisher={Wiley Online Library}
+}
+
+@book{qamar1983investigation,
+  title={An investigation of icequakes on the Greenland icesheet near Jakobshavn icestream},
+  author={Qamar, Anthony and Lawrence, William Francis St},
+  year={1983},
+  publisher={University of Colorado, World Data Center A for Glaciology}
+}
+
+@article{anthony2014seismic,
+  title={The seismic noise environment of Antarctica},
+  author={Anthony, Robert E and Aster, Richard C and Wiens, Douglas and Nyblade, Andrew and Anandakrishnan, Sridhar and Huerta, Audrey and Winberry, J Paul and Wilson, Terry and Rowe, Charlotte},
+  journal={Seismological Research Letters},
+  volume={86},
+  number={1},
+  pages={89--100},
+  year={2014},
+  publisher={Seismological Society of America}
+}
+
+@article{adams1988antarctic,
+  title={Antarctic earthquakes},
+  author={Adams, RD},
+  journal={Nature},
+  volume={331},
+  number={6158},
+  pages={665},
+  year={1988},
+  publisher={Nature Publishing Group}
+}
+
+@article{adams1969small,
+  title={Small earthquakes in Victoria land, Antarctica},
+  author={Adams, RD},
+  journal={Nature},
+  volume={224},
+  number={5216},
+  pages={255--256},
+  year={1969},
+  publisher={Springer}
+}
+@article{adams1985confirmed,
+  title={A confirmed earthquake in continental Antarctica},
+  author={Adams, RD and Hughes, AA and Zhang, BM},
+  journal={Geophysical Journal International},
+  volume={81},
+  number={2},
+  pages={489--492},
+  year={1985},
+  publisher={Blackwell Publishing Ltd Oxford, UK}
+}
+
+@article{anandakrishnan1994ice,
+  title={Ice Stream C, Antarctica, sticky spots detected by microearthquake monitoring},
+  author={Anandakrishnan, Sridhar and Alley, Richard B},
+  journal={Annals of Glaciology},
+  volume={20},
+  pages={183--186},
+  year={1994},
+  publisher={Cambridge University Press}
+}
+@article{amundson2010ice,
+  title={Ice m{\'e}lange dynamics and implications for terminus stability, Jakobshavn Isbr{\ae}, Greenland},
+  author={Amundson, Jason M and Fahnestock, Mark and Truffer, Martin and Brown, Jed and L{\"u}thi, Martin P and Motyka, Roman J},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={115},
+  number={F1},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+@article{amundson2012observing,
+  title={Observing calving-generated ocean waves with coastal broadband seismometers, Jakobshavn Isbr{\ae}, Greenland},
+  author={Amundson, Jason M and Clinton, John F and Fahnestock, Mark and Truffer, Martin and L{\"u}thi, Martin P and Motyka, Roman J},
+  journal={Annals of Glaciology},
+  volume={53},
+  number={60},
+  pages={79--84},
+  year={2012},
+  publisher={Cambridge University Press}
+}
+
+@article{anandakrishnan1997tidal,
+  title={Tidal forcing of basal seismicity of ice stream C, West Antarctica, observed far inland},
+  author={Anandakrishnan, Sridhar and Alley, Richard B},
+  journal={Journal of Geophysical Research: Solid Earth},
+  volume={102},
+  number={B7},
+  pages={15183--15196},
+  year={1997},
+  publisher={Wiley Online Library}
+}
+
+
+@article{anandakrishnan1993micro,
+  title={Micro-earthquakes beneath Ice Streams B and C, West Antarctica: observations and implications},
+  author={Anandakrishnan, Sridhar and Bentley, Charles R},
+  journal={Journal of Glaciology},
+  volume={39},
+  number={133},
+  pages={455--462},
+  year={1993},
+  publisher={Cambridge University Press}
+}
+
+@inproceedings{barcheck2013observations,
+  title={Observations of slip-coincident basal seismicity near the nucleation zone of Whillans Ice Plain stick-slip events},
+  author={Barcheck, CG and Schwartz, SY and Tulaczyk, SM and Walter, JI},
+  booktitle={AGU Fall Meeting Abstracts},
+  year={2013}
+}
+
+@article{bartholomaus2015tidal,
+  title={Tidal and seasonal variations in calving flux observed with passive seismology},
+  author={Bartholomaus, Timothy C and Larsen, Christopher F and West, Michael E and O'Neel, Shad and Pettit, Erin C and Truffer, Martin},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={120},
+  number={11},
+  pages={2318--2337},
+  year={2015},
+  publisher={Wiley Online Library}
+}
+
+@article{bartholomaus2015subglacial,
+  title={Subglacial discharge at tidewater glaciers revealed by seismic tremor},
+  author={Bartholomaus, Timothy C and Amundson, Jason M and Walter, Jacob I and O'Neel, Shad and West, Michael E and Larsen, Christopher F},
+  journal={Geophysical research letters},
+  volume={42},
+  number={15},
+  pages={6391--6398},
+  year={2015},
+  publisher={Wiley Online Library}
+}
+
+@article{bassis2005episodic,
+  title={Episodic propagation of a rift on the Amery Ice Shelf, East Antarctica},
+  author={Bassis, Jeremy N and Coleman, Richard and Fricker, HA and Minster, JB},
+  journal={Geophysical Research Letters},
+  volume={32},
+  number={6},
+  year={2005},
+  publisher={Wiley Online Library}
+}
+
+@article{bassis2007seismicity,
+  title={Seismicity and deformation associated with ice-shelf rift propagation},
+  author={Bassis, Jeremy N and Fricker, Helen A and Coleman, Richard and Bock, Yehuda and Behrens, James and Darnell, Dennis and Okal, Marianne and Minster, Jean-Bernard},
+  journal={Journal of Glaciology},
+  volume={53},
+  number={183},
+  pages={523--536},
+  year={2007},
+  publisher={Cambridge University Press}
+}
+
+@article{bassis2008investigation,
+  title={An investigation into the forces that drive ice-shelf rift propagation on the Amery Ice Shelf, East Antarctica},
+  author={Bassis, Jeremy N and Fricker, Helen A and Coleman, Richard and Minster, Jean-Bernard},
+  journal={Journal of Glaciology},
+  volume={54},
+  number={184},
+  pages={17--27},
+  year={2008},
+  publisher={Cambridge University Press}
+}
+
+@article{benitez2006continuous,
+  title={Continuous HMM-based seismic-event classification at Deception Island, Antarctica},
+  author={Ben{\'\i}tez, M Carmen and Ram{\'\i}rez, Javier and Segura, Jos C and Ibanez, Jess M and Almendros, Javier and Garc{\'\i}a-Yeguas, Araceli and Cortes, Guillermo},
+  journal={IEEE Transactions on Geoscience and remote sensing},
+  volume={45},
+  number={1},
+  pages={138--146},
+  year={2006},
+  publisher={IEEE}
+}
+
+@article{benn2007calving,
+  title={Calving processes and the dynamics of calving glaciers},
+  author={Benn, Douglas I and Warren, Charles R and Mottram, Ruth H},
+  journal={Earth-Science Reviews},
+  volume={82},
+  number={3-4},
+  pages={143--179},
+  year={2007},
+  publisher={Elsevier}
+}
+
+@article{bindschadler2003tidally,
+  title={Tidally controlled stick-slip discharge of a West Antarctic ice},
+  author={Bindschadler, Robert A and King, Matt A and Alley, Richard B and Anandakrishnan, Sridhar and Padman, Laurence},
+  journal={Science},
+  volume={301},
+  number={5636},
+  pages={1087--1089},
+  year={2003},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{blankenship1987microearthquakes,
+  title={Microearthquakes Under and Alongside Ice Stream B, Antarctica. Detected By A New Passive Seismic Array},
+  author={Blankenship, DD and Anandakrishnan, S and Kempf, JL and Bentley, CR},
+  journal={Annals of glaciology},
+  volume={9},
+  pages={30--34},
+  year={1987},
+  publisher={Cambridge University Press}
+}
+
+@article{bromirski2010transoceanic,
+  title={Transoceanic infragravity waves impacting Antarctic ice shelves},
+  author={Bromirski, Peter D and Sergienko, Olga V and MacAyeal, Douglas R},
+  journal={Geophysical Research Letters},
+  volume={37},
+  number={2},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+@article{brunt2011antarctic,
+  title={Antarctic ice-shelf calving triggered by the Honshu (Japan) earthquake and tsunami, March 2011},
+  author={Brunt, Kelly M and Okal, Emile A and MacAYEAL, Douglas R},
+  journal={Journal of Glaciology},
+  volume={57},
+  number={205},
+  pages={785--788},
+  year={2011},
+  publisher={Cambridge University Press}
+}
+
+@article{caplan2007precursory,
+  title={Precursory seismicity associated with frequent, large ice avalanches on Iliamna volcano, Alaska, USA},
+  author={Caplan-Auerbach, Jacqueline and Huggel, Christian},
+  journal={Journal of Glaciology},
+  volume={53},
+  number={180},
+  pages={128--140},
+  year={2007},
+  publisher={Cambridge University Press}
+}
+
+@article{cathles2009seismic,
+  title={Seismic observations of sea swell on the floating Ross Ice Shelf, Antarctica},
+  author={Cathles IV, LM and Okal, Emile A and MacAyeal, Douglas R},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={114},
+  number={F2},
+  year={2009},
+  publisher={Wiley Online Library}
+}
+
+@article{chen2011seventeen,
+  title={Seventeen Antarctic seismic events detected by global surface waves and a possible link to calving events from satellite images},
+  author={Chen, X and Shearer, PM and Walter, F and Fricker, HA},
+  journal={Journal of Geophysical Research: Solid Earth},
+  volume={116},
+  number={B6},
+  year={2011},
+  publisher={Wiley Online Library}
+}
+
+@article{christianson2013ice,
+  title={Ice sheet grounding zone stabilization due to till compaction},
+  author={Christianson, Knut and Parizek, Byron R and Alley, Richard B and Horgan, Huw J and Jacobel, Robert W and Anandakrishnan, Sridhar and Keisling, Benjamin A and Craig, Brian D and Muto, Atsuhiro},
+  journal={Geophysical Research Letters},
+  volume={40},
+  number={20},
+  pages={5406--5411},
+  year={2013},
+  publisher={Wiley Online Library}
+}
+
+@article{clarke2005subglacial,
+  title={Subglacial processes},
+  author={Clarke, Garry KC},
+  journal={Annu. Rev. Earth Planet. Sci.},
+  volume={33},
+  pages={247--276},
+  year={2005},
+  publisher={Annual Reviews}
+}
+
+@article{colgan2016glacier,
+  title={Glacier crevasses: Observations, models, and mass balance implications},
+  author={Colgan, William and Rajaram, Harihar and Abdalati, Waleed and McCutchan, Cheryl and Mottram, Ruth and Moussavi, Mahsa S and Grigsby, Shane},
+  journal={Reviews of Geophysics},
+  volume={54},
+  number={1},
+  pages={119--161},
+  year={2016},
+  publisher={Wiley Online Library}
+}
+
+@article{dahl2010greenland,
+  title={Greenland ice sheet monitoring network (GLISN): a seismological approach},
+  author={Dahl-Jensen, Trine and Larsen, Tine B and Voss, Peter H and others},
+  journal={Geological Survey of Denmark and Greenland Bulletin},
+  volume={20},
+  pages={55--58},
+  year={2010}
+}
+@article{canassy2016seasonal,
+  title={Seasonal variations of glacier seismicity at the tongue of Rhonegletscher (Switzerland) with a focus on basal icequakes},
+  author={Canassy, Pierre Dalban and R{\"o}{\"o}sli, Claudia and Walter, Fabian},
+  journal={Journal of Glaciology},
+  volume={62},
+  number={231},
+  pages={18--30},
+  year={2016},
+  publisher={Cambridge University Press}
+}
+
+@article{danesi2007repeating,
+  title={Repeating earthquakes from rupture of an asperity under an Antarctic outlet glacier},
+  author={Danesi, Stefania and Bannister, Stephen and Morelli, Andrea},
+  journal={Earth and Planetary Science Letters},
+  volume={253},
+  number={1-2},
+  pages={151--158},
+  year={2007},
+  publisher={Elsevier}
+}
+
+@article{das2008fracture,
+  title={Fracture propagation to the base of the Greenland Ice Sheet during supraglacial lake drainage},
+  author={Das, Sarah B and Joughin, Ian and Behn, Mark D and Howat, Ian M and King, Matt A and Lizarralde, Dan and Bhatia, Maya P},
+  journal={Science},
+  volume={320},
+  number={5877},
+  pages={778--781},
+  year={2008},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{de2010sudden,
+  title={Sudden increase in tidal response linked to calving and acceleration at a large Greenland outlet glacier},
+  author={de Juan, Julia and El{\'o}segui, Pedro and Nettles, Meredith and Larsen, Tine B and Davis, James L and Hamilton, Gordon S and Stearns, Leigh A and Andersen, Morten L and Ekstr{\"o}m, G{\"o}ran and Ahlstr{\o}m, Andreas P and others},
+  journal={Geophysical Research Letters},
+  volume={37},
+  number={12},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+@article{deichmann1979observations,
+  title={Observations of glacier seismicity on Unteraargletscher},
+  author={Deichmann, N and Ansorge, J and R{\"o}thlisberger, H},
+  journal={Journal of Glaciology},
+  volume={23},
+  number={89},
+  pages={409--409},
+  year={1979},
+  publisher={Cambridge University Press}
+}
+
+@article{lough2015previously,
+  title={A previously unreported type of seismic source in the firn layer of the East Antarctic Ice Sheet},
+  author={Lough, Amanda C and Barcheck, C Grace and Wiens, Douglas A and Nyblade, Andrew and Anandakrishnan, Sridhar},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={120},
+  number={11},
+  pages={2237--2252},
+  year={2015},
+  publisher={Wiley Online Library}
+}
+
+@article{diez2015seismic,
+  title={Seismic wave propagation in anisotropic ice-Part 1: Elasticity tensor and derived quantities from ice-core properties},
+  author={Diez, Anja and Eisen, Olaf},
+  journal={The Cryosphere},
+  volume={9},
+  number={1},
+  pages={367--384},
+  year={2015},
+  publisher={Copernicus Publications}
+}
+
+@article{neave1970icequakes,
+  title={Icequakes on the Athabasca glacier},
+  author={Neave, KG and Savage, JC},
+  journal={Journal of Geophysical Research},
+  volume={75},
+  number={8},
+  pages={1351--1362},
+  year={1970},
+  publisher={Wiley Online Library}
+}
+
+@article{goldberg2014stick,
+  title={Stick-slip motion of an Antarctic Ice Stream: The effects of viscoelasticity},
+  author={Goldberg, DN and Schoof, C and Sergienko, OV},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={119},
+  number={7},
+  pages={1564--1580},
+  year={2014},
+  publisher={Wiley Online Library}
+}
+
+@article{olinger2019tidal,
+  title={Tidal and thermal stresses drive seismicity along a major Ross Ice Shelf rift},
+  author={Olinger, SD and Lipovsky, BP and Wiens, DA and Aster, RC and Bromirski, PD and Chen, Z and Gerstoft, P and Nyblade, Andrew Arnold and Stephen, RA},
+  journal={Geophysical Research Letters},
+  volume={46},
+  number={12},
+  pages={6644--6652},
+  year={2019},
+  publisher={Wiley Online Library}
+}
+
+@article{church2019detecting,
+  title={Detecting and characterising an englacial conduit network within a temperate Swiss glacier using active seismic, ground penetrating radar and borehole analysis},
+  author={Church, Gregory and Bauder, Andreas and Grab, Melchior and Rabenstein, Lasse and Singh, Satyan and Maurer, Hansruedi},
+  journal={Annals of Glaciology},
+  pages={1--13},
+  year={2019},
+  publisher={Cambridge University Press}
+}
+
+@article{faillettaz2015avalanching,
+  title={Avalanching glacier instabilities: Review on processes and early warning perspectives},
+  author={Faillettaz, J{\'e}rome and Funk, Martin and Vincent, Christian},
+  journal={Reviews of Geophysics},
+  volume={53},
+  number={2},
+  pages={203--224},
+  year={2015},
+  publisher={Wiley Online Library}
+}
+
+@article{faillettaz2008evidence,
+  title={Evidence of log-periodic oscillations and increasing icequake activity during the breaking-off of large ice masses},
+  author={Faillettaz, J{\'e}rome and Pralong, Antoine and Funk, Martin and Deichmann, Nicholas},
+  journal={Journal of Glaciology},
+  volume={54},
+  number={187},
+  pages={725--737},
+  year={2008},
+  publisher={Cambridge University Press}
+}
+@article{ekstrom2006seasonality,
+  title={Seasonality and increasing frequency of Greenland glacial earthquakes},
+  author={Ekstr{\"o}m, G{\"o}ran and Nettles, Meredith and Tsai, Victor C},
+  journal={Science},
+  volume={311},
+  number={5768},
+  pages={1756--1758},
+  year={2006},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{matsumotonoisy,
+  title={Noisy icebergs from Antarctica and sound scope of the South Pacific Ocean},
+  author={Matsumoto, Haru and Dziak, Robert P and Haxel, Joe and Lau, TK and Fowler, Matt and Bohnenstiehl, DelWayne R and Park, Minkyu and Lee, Won-Sang}
+}
+
+@article{dziak2013life,
+  title={Life and death sounds of iceberg A53a},
+  author={Dziak, Robert P and Fowler, Matthew J and Matsumoto, Haruyoshi and Bohnenstiehl, Delwayne R and Park, Minkyu and Warren, Kyle and Lee, Won Sang},
+  journal={Oceanography},
+  volume={26},
+  number={2},
+  pages={10--13},
+  year={2013},
+  publisher={JSTOR}
+}
+
+
+@article{doyle2013ice,
+  title={Ice tectonic deformation during the rapid in situ drainage of a supraglacial lake on the Greenland Ice Sheet.},
+  author={Doyle, Samuel Huckerby and Hubbard, Alun Lloyd and Dow, Christine F and Jones, Gwawr Angharad and Fitzpatrick, Andrew Alexander William and Gusmeroli, Alessio and Kulessa, Bernd and Lindback, K and Pettersson, Rickard and Box, Jason E},
+  journal={Cryosphere},
+  volume={7},
+  number={1},
+  pages={129--140},
+  year={2013},
+  publisher={Copernicus Publications}
+}
+
+@article{diez2016ice,
+  title={Ice shelf structure derived from dispersion curve analysis of ambient seismic noise, Ross Ice Shelf, Antarctica},
+  author={Diez, Anja and Bromirski, Peter D and Gerstoft, Peter and Stephen, Ralph A and Anthony, Robert E and Aster, Richard C and Cai, Chen and Nyblade, Andrew and Wiens, Douglas A},
+  journal={Geophysical Journal International},
+  volume={205},
+  number={2},
+  pages={785--795},
+  year={2016},
+  publisher={Oxford University Press}
+}
+
+
+@mastersthesis{koubova2015localization,
+  title={Localization and analysis of calving-related seismicity at Kronebreen, Svalbard},
+  author={Koubova, Hana},
+  year={2015}
+}
+
+@article{kohler2015regional,
+  title={Regional passive seismic monitoring reveals dynamic glacier activity on Spitsbergen, Svalbard},
+  author={K{\"o}hler, Andreas and Nuth, Christopher and Schweitzer, Johannes and Weidle, Christian and Gibbons, Steven J},
+  journal={Polar Research},
+  volume={34},
+  number={1},
+  pages={26178},
+  year={2015},
+  publisher={Taylor \& Francis}
+}
+
+@article{kohler2012autonomous,
+  title={Autonomous detection of calving-related seismicity at Kronebreen, Svalbard},
+  author={K{\"o}hler, Andreas and Chapuis, Anne and Nuth, Christopher and Kohler, Jack and Weidle, Christian},
+  journal={The Cryosphere},
+  volume={6},
+  number={2},
+  pages={393--406},
+  year={2012},
+  publisher={National Snow and Ice Data Center}
+}
+
+@article{masaki2011seismic,
+  title={Seismic Wave Interactions between the Atmosphere-Ocean-Cryosphere system and the Geosphere in Polar Regions},
+  author={Masaki, Kanao and Yoshiaki, Ishihara and Masayuki, Yamamoto and Kazunari, Nawa and Genchi, Toyokuni and Alessia, Maggi and others},
+  year={2011}
+}
+@article{masaki2015characteristic,
+  title={Characteristic of seismic tremors with harmonic overtones in the L{\"u}tzow-Holm Bay region, East Antarctica: 2014-2015},
+  author={Masaki, Kanao and others},
+  year={2015}
+}
+@article{kaminuma1994seismic,
+  title={Seismic activity in and around the Antarctic continent},
+  author={Kaminuma, K},
+  journal={Terra Antarica},
+  volume={1},
+  pages={423--426},
+  year={1994}
+}
+
+@article{joughin2008ice,
+  title={Ice-front variation and tidewater behavior on Helheim and Kangerdlugssuaq Glaciers, Greenland},
+  author={Joughin, Ian and Howat, Ian and Alley, Richard B and Ekstrom, Goran and Fahnestock, Mark and Moon, Twila and Nettles, Meredith and Truffer, Martin and Tsai, Victor C},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={113},
+  number={F1},
+  year={2008},
+  publisher={Wiley Online Library}
+}
+
+@article{ekstrom2003glacial,
+  title={Glacial earthquakes},
+  author={Ekstr{\"o}m, G{\"o}ran and Nettles, Meredith and Abers, Geoffrey A},
+  journal={Science},
+  volume={302},
+  number={5645},
+  pages={622--624},
+  year={2003},
+  publisher={American Association for the Advancement of Science}
+}
+
+
+@article{heeszel2014humming,
+  title={Humming glaciers},
+  author={Heeszel, David S and Walter, Fabian and Kilb, Deborah L},
+  journal={Geology},
+  volume={42},
+  number={12},
+  pages={1099--1102},
+  year={2014},
+  publisher={Geological Society of America}
+}
+@article{heeszel2014seismicity,
+  title={Seismicity within a propagating ice shelf rift: The relationship between icequake locations and ice shelf structure},
+  author={Heeszel, David S and Fricker, Helen A and Bassis, Jeremy N and O'Neel, Shad and Walter, Fabian},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={119},
+  number={4},
+  pages={731--744},
+  year={2014},
+  publisher={Wiley Online Library}
+}
+
+@article{hatherton1962special,
+  title={A special mechanism for some Antarctic earthquakes},
+  author={Hatherton, T and Evison, FF},
+  journal={New Zealand Journal of Geology and Geophysics},
+  volume={5},
+  number={5},
+  pages={864--873},
+  year={1962},
+  publisher={Taylor \& Francis}
+}
+@article{hatherton1960microseisms,
+  title={Microseisms at Scott Base},
+  author={Hatherton, T},
+  journal={Geophysical Journal International},
+  volume={3},
+  number={4},
+  pages={381--405},
+  year={1960},
+  publisher={Blackwell Publishing Ltd Oxford, UK}
+}
+
+@article{harland2013deformation,
+  title={Deformation in Rutford Ice Stream, West Antarctica: measuring shear-wave anisotropy from icequakes},
+  author={Harland, SR and Kendall, J-M and Stuart, GW and Lloyd, GE and Baird, AF and Smith, AM and Pritchard, HD and Brisbourne, AM},
+  journal={Annals of Glaciology},
+  volume={54},
+  number={64},
+  pages={105--114},
+  year={2013},
+  publisher={Cambridge University Press}
+}
+
+@article{hamaguchi1978study,
+  title={A study on ice faulting and icequake activity in the Lake Suwa,(2) temporal variation of m-value},
+  author={Hamaguchi, Hiroyuki and Goto, Kazuhiko},
+  journal={Science reports of the Tohoku University. Ser. 5, Geophysics},
+  volume={25},
+  number={1},
+  pages={25--38},
+  year={1978},
+  publisher={Faculty of Science, Tohoku University}
+}
+
+@article{larsen2006earthquake,
+  title={Earthquake seismology in Greenland--improved data with multiple applications},
+  author={Larsen, Tine B and Dahl-Jensen, Trine and Voss, Peter and J{\o}rgensen, Thomas M{\o}ller and Gregersen, S{\o}ren and Rasmussen, Hans Peter},
+  journal={Geological Survey of Denmark and Greenland Bulletin},
+  volume={10},
+  pages={57--60},
+  year={2006},
+  publisher={Citeseer}
+}
+
+@article{larose2015environmental,
+  title={Environmental seismology: What can we learn on earth surface processes with ambient noise?},
+  author={Larose, Eric and Carri{\`e}re, Simon and Voisin, Christophe and Bottelin, Pierre and Baillet, Laurent and Gu{\'e}guen, Philippe and Walter, Fabian and Jongmans, Denis and Guillier, Bertrand and Garambois, Stephane and others},
+  journal={Journal of Applied Geophysics},
+  volume={116},
+  pages={62--74},
+  year={2015},
+  publisher={Elsevier}
+}
+
+@article{larmat2008time,
+  title={Time reversal location of glacial earthquakes},
+  author={Larmat, Car{\`e}ne and Tromp, Jeroen and Liu, Qinya and Montagner, Jean-Paul},
+  journal={Journal of Geophysical Research: Solid Earth},
+  volume={113},
+  number={B9},
+  year={2008},
+  publisher={Wiley Online Library}
+}
+
+
+@article{laderach2011seismic,
+  title={Seismic arrays on drifting ice floes: experiences from four deployments in the Arctic Ocean},
+  author={Laderach, C and Schlindwein, Vera},
+  journal={Seismological Research Letters},
+  volume={82},
+  number={4},
+  pages={494--503},
+  year={2011},
+  publisher={Seismological Society of America}
+}
+
+@article{podolskiy2016tide,
+  title={Tide-modulated ice flow variations drive seismicity near the calving front of Bowdoin Glacier, Greenland},
+  author={Podolskiy, Evgeny A and Sugiyama, Shin and Funk, Martin and Walter, Fabian and Genco, Riccardo and Tsutaki, Shun and Minowa, Masahiro and Ripepe, Maurizio},
+  journal={Geophysical research letters},
+  volume={43},
+  number={5},
+  pages={2036--2044},
+  year={2016},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{zoet2013calving,
+  title={Calving events near the terminus of Thwaites Glacier, Antarctica},
+  author={Zoet, Lucas and Anandakrishnan, Sridhar and Alley, RB},
+  booktitle={AGU Fall Meeting Abstracts},
+  year={2013}
+}
+
+@article{wolf1986glacier,
+  title={Glacier-generated earthquakes from Prince William Sound, Alaska},
+  author={Wolf, Lorraine W and Davies, John N},
+  journal={Bulletin of the Seismological Society of America},
+  volume={76},
+  number={2},
+  pages={367--379},
+  year={1986},
+  publisher={The Seismological Society of America}
+}
+
+@article{weaver1979seismic,
+  title={Seismic evidence for discrete glacier motion at the rock--ice interface},
+  author={Weaver, Craig S and Malone, Stephen D},
+  journal={Journal of Glaciology},
+  volume={23},
+  number={89},
+  pages={171--184},
+  year={1979},
+  publisher={Cambridge University Press}
+}
+
+@article{weaver1976mt,
+  title={Mt. Saint Helens seismic events: Volcanic earthquakes or glacial noises?},
+  author={Weaver, Craig S and Malone, Stephen D},
+  journal={Geophysical Research Letters},
+  volume={3},
+  number={3},
+  pages={197--200},
+  year={1976},
+  publisher={Wiley Online Library}
+}
+@inproceedings{walter2013seismic,
+  title={The seismic signature of glacier outburst floods},
+  author={Walter, JI and Amundson, JM and Peng, Z and Prejean, SG and Morgan, P},
+  booktitle={AGU Fall Meeting Abstracts},
+  year={2013}
+}
+
+@inproceedings{walter2013water,
+  title={Water-related seismic sources in glaciers and ice sheets},
+  author={Walter, FT and Heeszel, D and Kilb, DL and Roux, P and Husen, S and Kissling, EH and Luethi, MP and Funk, M and Clinton, JF and Fricker, H},
+  booktitle={AGU Fall Meeting Abstracts},
+  year={2013}
+}
+
+@article{otero2010three,
+  title={A three-dimensional calving model: numerical experiments on Johnsons Glacier, Livingston Island, Antarctica},
+  author={Otero, Jaime and Navarro, Francisco J and Martin, Carlos and Cuadrado, Maria L and Corcuera, Maria I},
+  journal={Journal of Glaciology},
+  volume={56},
+  number={196},
+  pages={200--214},
+  year={2010},
+  publisher={Cambridge University Press}
+}
+
+@article{toyokuni2015numerical,
+  title={Numerical modeling of seismic waves for estimating the influence of the Greenland ice sheet on observed seismograms},
+  author={Toyokuni, Genti and Takenaka, Hiroshi and Kanao, Masaki and Tsuboi, Seiji and Tono, Yoko},
+  journal={Polar Science},
+  volume={9},
+  number={1},
+  pages={80--93},
+  year={2015},
+  publisher={Elsevier}
+}
+
+@article{tsai2007analysis,
+  title={Analysis of glacial earthquakes},
+  author={Tsai, Victor C and Ekstr{\"o}m, G{\"o}ran},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={112},
+  number={F3},
+  year={2007},
+  publisher={Wiley Online Library}
+}
+
+@article{tsai2011quantifying,
+  title={Quantifying the influence of sea ice on ocean microseism using observations from the Bering Sea, Alaska},
+  author={Tsai, Victor C and McNamara, Daniel E},
+  journal={Geophysical Research Letters},
+  volume={38},
+  number={22},
+  year={2011},
+  publisher={Wiley Online Library}
+}
+
+@article{tsai2008possible,
+  title={Possible mechanisms for glacial earthquakes},
+  author={Tsai, Victor C and Rice, James R and Fahnestock, Mark},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={113},
+  number={F3},
+  year={2008},
+  publisher={Wiley Online Library}
+}
+
+@article{seiji2015may,
+  title={May 30, 2015 Bonin Islands, Japan deep earthquake (Mw7. 8) recorded by broadband seismographic station on Greenland ice sheet},
+  author={Seiji, Tsuboi and Takeshi, Nakamura and Takayuki, Miyoshi and others},
+  year={2015}
+}
+
+
+@article{veitch2012spatial,
+  title={Spatial and temporal variations in Greenland glacial-earthquake activity, 1993--2010},
+  author={Veitch, Stephen A and Nettles, Meredith},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={117},
+  number={F4},
+  year={2012},
+  publisher={Wiley Online Library}
+}
+
+@article{vilajosana2007snow,
+  title={Snow avalanche energy estimation from seismic signal analysis},
+  author={Vilajosana, I and Surinach, E and Khazaradze, G and Gauer, P},
+  journal={Cold Regions Science and Technology},
+  volume={50},
+  number={1-3},
+  pages={72--85},
+  year={2007},
+  publisher={Elsevier}
+}
+
+@article{walter2012analysis,
+  title={Analysis of low-frequency seismic signals generated during a multiple-iceberg calving event at Jakobshavn Isbr{\ae}, Greenland},
+  author={Walter, Fabian and Amundson, Jason M and O'Neel, Shad and Truffer, Martin and Fahnestock, Mark and Fricker, Helen A},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={117},
+  number={F1},
+  year={2012},
+  publisher={Wiley Online Library}
+}
+
+
+@article{sergeant2016complex,
+  title={Complex force history of a calving-generated glacial earthquake derived from broadband seismic inversion},
+  author={Sergeant, Amandine and Mangeney, Anne and Stutzmann, El{\'e}onore and Montagner, Jean-Paul and Walter, Fabian and Moretti, Laurent and Castelnau, Olivier},
+  journal={Geophysical Research Letters},
+  volume={43},
+  number={3},
+  pages={1055--1065},
+  year={2016},
+  publisher={Wiley Online Library}
+}
+
+@article{smith2006microearthquakes,
+  title={Microearthquakes and subglacial conditions},
+  author={Smith, AM},
+  journal={Geophysical Research Letters},
+  volume={33},
+  number={24},
+  year={2006},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{smith2013icequakes,
+  title={Icequakes! Microseismic'; Sticky Spots' in Rutford Ice Stream, West Antarctica},
+  author={Smith, EC and Smith, A and White, RS and Brisbourne, A},
+  booktitle={AGU Fall Meeting Abstracts},
+  year={2013}
+}
+
+@article{smith2015mapping,
+  title={Mapping the ice-bed interface characteristics of Rutford Ice Stream, West Antarctica, using microseismicity},
+  author={Smith, EC and Smith, AM and White, RS and Brisbourne, AM and Pritchard, HD},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={120},
+  number={9},
+  pages={1881--1894},
+  year={2015},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{smith2010capturing,
+  title={Capturing fracture propagation in a glacier using passive seismology},
+  author={Smith, KL and Mikesell, TD and van Wijk, K and Walter, FT and Bradford, JH},
+  booktitle={AGU Fall Meeting Abstracts},
+  year={2010}
+}
+
+@article{lawrence1979hydraulic,
+  title={Hydraulic transients: A seismic source in volcanoes and glaciers},
+  author={LAWRENCE, WILLIAM ST and Qamar, Anthony},
+  journal={Science},
+  volume={203},
+  number={4381},
+  pages={654--656},
+  year={1979},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{storchak2015long,
+  title={Long-term accumulation and improvements in seismic event data for the polar regions by the International Seismological Centre},
+  author={Storchak, Dmitry A and Kanao, Masaki and Delahaye, Emily and Harris, James},
+  journal={Polar Science},
+  volume={9},
+  number={1},
+  pages={5--16},
+  year={2015},
+  publisher={Elsevier}
+}
+
+@article{stuart2005seismic,
+  title={Seismic emissions from a surging glacier: Bakaninbreen, Svalbard},
+  author={Stuart, Graham and Murray, Tavi and Brisbourne, Alex and Styles, Peter and Toon, Sam},
+  journal={Annals of Glaciology},
+  volume={42},
+  pages={151--157},
+  year={2005},
+  publisher={Cambridge University Press}
+}
+
+@article{stutzmann2009global,
+  title={Global climate imprint on seismic noise},
+  author={Stutzmann, Eleonore and Schimmel, Martin and Patau, Genevieve and Maggi, Alessia},
+  journal={Geochemistry, Geophysics, Geosystems},
+  volume={10},
+  number={11},
+  year={2009},
+  publisher={Wiley Online Library}
+}
+
+@article{teisseyre2004seismic,
+  title={Seismic events and rotation waves in the Hans Glacier, Spitsbergen, and the Pasterze Glacier, Austria},
+  author={Teisseyre, Krzysztof P and G{\'o}rski, Marek and Suchcicki, Jerzy},
+  journal={Acta Geophys. Pol},
+  volume={52},
+  number={4},
+  pages={465--476},
+  year={2004}
+}
+
+@article{raimondi2016tensor,
+  title={Tensor decomposition exploiting diversity of propagation velocities: Application to localization of icequake events},
+  author={Raimondi, Francesca and Comon, Pierre and Michel, Olivier and Sahnoun, Souleymen and Helmstetter, Agnes},
+  journal={Signal Processing},
+  volume={118},
+  pages={75--88},
+  year={2016},
+  publisher={Elsevier}
+}
+
+@article{richardson2010characteristics,
+  title={Characteristics of seismic and acoustic signals produced by calving, Bering Glacier, Alaska},
+  author={Richardson, Joshua P and Waite, Gregory P and FitzGerald, Katelyn A and Pennington, Wayne D},
+  journal={Geophysical Research Letters},
+  volume={37},
+  number={3},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+@article{roeoesli2016seismic,
+  title={Seismic moulin tremor},
+  author={Roeoesli, Claudia and Walter, Fabian and Ampuero, Jean-Paul and Kissling, Edi},
+  journal={Journal of Geophysical Research: Solid Earth},
+  volume={121},
+  number={8},
+  pages={5838--5858},
+  year={2016},
+  publisher={Wiley Online Library}
+}
+
+@article{roeoesli2016meltwater,
+  title={Meltwater influences on deep stick-slip icequakes near the base of the Greenland Ice Sheet},
+  author={Roeoesli, Claudia and Helmstetter, Agnes and Walter, Fabian and Kissling, Edi},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={121},
+  number={2},
+  pages={223--240},
+  year={2016},
+  publisher={Wiley Online Library}
+}
+
+@article{rogers1976microearthquake,
+  title={A microearthquake survey in northwest British Columbia and southeast Alaska},
+  author={Rogers, Garry C},
+  journal={Bulletin of the Seismological Society of America},
+  volume={66},
+  number={5},
+  pages={1643--1655},
+  year={1976},
+  publisher={The Seismological Society of America}
+}
+
+@article{roethlisberger1972seimsmic,
+  title={SEISMIC EXPLORATION IN COLD REGIONS},
+  author={Roethlisberger, Hans},
+  year={1972}
+}
+
+@article{roux2010observation,
+  title={Observation of surface seismic activity changes of an Alpine glacier during a glacier-dammed lake outburst},
+  author={Roux, P-F and Walter, F and Riesen, P and Sugiyama, S and Funk, M},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={115},
+  number={F3},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+@article{ruzhich2009deformation,
+  title={Deformation and seismic effects in the ice cover of Lake Baikal},
+  author={Ruzhich, VV and Psakhie, Sergey Grigorievich and Chernykh, EN and Bornyakov, SA and Granin, NG},
+  journal={Russian Geology and Geophysics},
+  volume={50},
+  number={3},
+  pages={214--221},
+  year={2009},
+  publisher={Elsevier}
+}
+
+@article{martin2010kinematic,
+  title={Kinematic and seismic analysis of giant tabular iceberg breakup at Cape Adare, Antarctica},
+  author={Martin, Seelye and Drucker, Robert and Aster, Richard and Davey, Fred and Okal, Emile and Scambos, Ted and MacAyeal, Douglas},
+  journal={Journal of Geophysical Research: Solid Earth},
+  volume={115},
+  number={B6},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+@article{mei2016two,
+  title={A two-station seismic method to localize glacier calving},
+  author={Mei, M Jeffrey and Holland, David M and Anandakrishnan, Sridhar and Zheng, Tiantian},
+  journal={Cryosphere Discuss},
+  pages={1--15},
+  year={2016}
+}
+
+@article{mordret2016monitoring,
+  title={Monitoring southwest Greenland’s ice sheet melt with ambient seismic noise},
+  author={Mordret, Aur{\'e}lien and Mikesell, T Dylan and Harig, Christopher and Lipovsky, Bradley P and Prieto, Germ{\'a}n A},
+  journal={Science advances},
+  volume={2},
+  number={5},
+  pages={e1501538},
+  year={2016},
+  publisher={American Association for the Advancement of Science}
+}
+
+@inproceedings{morgan2013mendenhall,
+  title={Mendenhall Glacier (Juneau, Alaska) icequake seismicity and its relationship to the 2012 outburst flood and other environmental forcing},
+  author={Morgan, PM and Walter, JI and Peng, Z and Amundson, JM and Meng, X},
+  booktitle={AGU Fall Meeting Abstracts},
+  year={2013}
+}
+
+@article{murray2015reverse,
+  title={Reverse glacier motion during iceberg calving and the cause of glacial earthquakes},
+  author={Murray, T and Nettles, Meredith and Selmes, N and Cathles, LM and Burton, JC and James, TD and Edwards, S and Martin, I and O’Farrell, T and Aspey, R and others},
+  journal={Science},
+  volume={349},
+  number={6245},
+  pages={305--308},
+  year={2015},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{nolan1999seismic,
+  title={Seismic detection of transient changes beneath Black Rapids Glacier, Alaska, USA: I. Techniques and observations},
+  author={Nolan, Matt and Echelmeyer, Keith},
+  journal={Journal of Glaciology},
+  volume={45},
+  number={149},
+  pages={119--131},
+  year={1999},
+  publisher={Cambridge University Press}
+}
+
+@inproceedings{norman2013seismic,
+  title={Seismic signatures of iceberg failure, collapse and rolls},
+  author={Norman, EC and Rosser, NJ and Szczucinski, W and Dunning, S and Long, AJ and Strzelecki, M and Drewniak, M and Benjamin, J},
+  booktitle={AGU Fall Meeting Abstracts},
+  year={2013}
+}
+
+@article{okal2006seismic,
+  title={Seismic recording on drifting icebergs: Catching seismic waves, tsunamis and storms from Sumatra and elsewhere},
+  author={Okal, Emile A and MacAyeal, Douglas R},
+  journal={Seismological Research Letters},
+  volume={77},
+  number={6},
+  pages={659--671},
+  year={2006},
+  publisher={Seismological Society of America}
+}
+
+@article{peters2012seismic,
+  title={Seismic attenuation in glacial ice: A proxy for englacial temperature},
+  author={Peters, LE and Anandakrishnan, Sridhar and Alley, Richard B and Voigt, Donald Edward},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={117},
+  number={F2},
+  year={2012},
+  publisher={Wiley Online Library}
+}
+
+@article{pratt2017implications,
+  title={Implications of sea ice on Southern Ocean microseisms detected by a seismic array in West Antarctica},
+  author={Pratt, Martin J and Wiens, Douglas A and Winberry, J Paul and Anandakrishnan, Sridhar and Euler, Garrett G},
+  journal={Geophysical Journal International},
+  volume={209},
+  number={1},
+  pages={492--507},
+  year={2017},
+  publisher={Oxford University Press}
+}
+
+@article{kristensen1982tabular,
+  title={Tabular icebergs in ocean waves},
+  author={Kristensen, Monica and Squire, Vernon A and Moore, Stuart C},
+  journal={Nature},
+  volume={297},
+  number={5868},
+  pages={669},
+  year={1982},
+  publisher={Nature Publishing Group}
+}
+
+@article{lazzara1999recent,
+  title={On the recent calving of icebergs from the Ross Ice Shelf},
+  author={Lazzara, MA and Jezek, KC and Scambos, TA and MacAyeal, DR and Van der Veen, CJ},
+  journal={Polar Geography},
+  volume={23},
+  number={3},
+  pages={201--212},
+  year={1999},
+  publisher={Taylor \& Francis}
+}
+
+@article{lewandowska1964investigations,
+  title={Investigations of the ice microtremors on Spitsbergen in 1962},
+  author={Lewandowska, H and Teisseyre, R},
+  journal={Biul Inf Komisji Wypraw Geof PAN},
+  volume={37},
+  pages={1--5},
+  year={1964}
+}
+
+@article{lombardi2016bimodal,
+  title={Bimodal pattern of seismicity detected at the ocean margin of an Antarctic ice shelf},
+  author={Lombardi, Denis and Benoit, Lionel and Camelbeeck, Thierry and Martin, Olivier and Meynard, Christophe and Thom, Christian},
+  journal={Geophysical Journal International},
+  volume={206},
+  number={2},
+  pages={1375--1381},
+  year={2016},
+  publisher={Oxford University Press}
+}
+
+@inproceedings{lough2013waveform,
+  title={Waveform studies of strong cryoseismic sources near the top of the Antarctic ice sheet},
+  author={Lough, AC and Wiens, DA and Barcheck, CG and Nyblade, A},
+  booktitle={AGU Fall Meeting Abstracts},
+  year={2013}
+}
+
+@article{luthi2016multi,
+  title={Multi-method observation and analysis of a tsunami caused by glacier calving},
+  author={L{\"u}thi, Martin P and Vieli, Andreas},
+  journal={The Cryosphere},
+  volume={10},
+  number={3},
+  pages={995--1002},
+  year={2016},
+  publisher={Copernicus GmbH}
+}
+
+@article{macayeal2003catastrophic,
+  title={Catastrophic ice-shelf break-up by an ice-shelf-fragment-capsize mechanism},
+  author={MacAYEAL, Douglas R and Scambos, Ted A and Hulbe, Christina L and Fahnestock, Mark A},
+  journal={Journal of Glaciology},
+  volume={49},
+  number={164},
+  pages={22--36},
+  year={2003},
+  publisher={Cambridge University Press}
+}
+
+@article{macayeal2006transoceanic,
+  title={Transoceanic wave propagation links iceberg calving margins of Antarctica with storms in tropics and Northern Hemisphere},
+  author={MacAyeal, Douglas R and Okal, Emile A and Aster, Richard C and Bassis, Jeremy N and Brunt, Kelly M and Cathles, L Mac and Drucker, Robert and Fricker, Helen A and Kim, Young-Jin and Martin, Seelye and others},
+  journal={Geophysical Research Letters},
+  volume={33},
+  number={17},
+  year={2006},
+  publisher={Wiley Online Library}
+}
+
+
+
+@article{macayeal2015ambient,
+  title={Ambient seismic, hydroacoustic, and flexural gravity wave noise on a tabular iceberg},
+  author={MacAyeal, Douglas R and Wang, Yitan and Okal, Emile A},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={120},
+  number={2},
+  pages={200--211},
+  year={2015},
+  publisher={Wiley Online Library}
+}
+
+@article{deichmann2000evidence,
+  title={Evidence for deep icequakes in an Alpine glacier},
+  author={Deichmann, N and Ansorge, J{\"o}rg and Scherbaum, Frank and Aschwanden, A and Bernard, F and Gudmundsson, GH},
+  journal={Annals of Glaciology},
+  volume={31},
+  pages={85--90},
+  year={2000},
+  publisher={Cambridge University Press}
+}
+
+@article{senechal2003georadar,
+  title={Georadar and seismic investigations over the glacier de la Girose (French Alps)},
+  author={S{\'e}n{\'e}chal, G and Rousset, Dominique and Salom{\'e}, A-L and Grasso, J-R},
+  journal={Near Surface Geophysics},
+  volume={1},
+  number={1},
+  pages={5--12},
+  year={2003}
+}
+
+@article{joughin2005calving,
+  title={Calving of large tabular icebergs from ice shelf rift systems},
+  author={Joughin, Ian and MacAyeal, Douglas R},
+  journal={Geophysical research letters},
+  volume={32},
+  number={2},
+  year={2005},
+  publisher={Wiley Online Library}
+}
+
+@article{contrafatto2018design,
+  title={Design of a seismo-acoustic station for Antarctica},
+  author={Contrafatto, Danilo and Fasone, Rosario and Ferro, Angelo and Larocca, Graziano and Laudani, Giuseppe and Rapisarda, Salvatore and Scuderi, Luciano and Zuccarello, Luciano and Privitera, Eugenio and Cannata, Andrea},
+  journal={Review of Scientific Instruments},
+  volume={89},
+  number={4},
+  pages={044502},
+  year={2018},
+  publisher={AIP Publishing}
+}
+
+@inproceedings{liashchuk2018seismoacoustic,
+  title={Seismoacoustic Monitoring Of The Cryosphere In The Vernadsky Station Region},
+  author={Liashchuk, O and Andryschenko, Yu and Kariagin, E},
+  booktitle={12th International Conference on Monitoring of Geological Processes and Ecological Condition of the Environment},
+  year={2018}
+}
+@article{lindner2019glaciohydraulic,
+  title={Glaciohydraulic seismic tremors on an Alpine glacier},
+  author={Lindner, Fabian and Walter, Fabian and Laske, Gabi and Gimbert, Florent},
+  journal={The Cryosphere Discussions},
+  year={2019},
+  publisher={Copernicus}
+}
+
+@article{veitch2017assessment,
+  title={Assessment of glacial-earthquake source parameters},
+  author={Veitch, Stephen A and Nettles, Meredith},
+  journal={Journal of Glaciology},
+  volume={63},
+  number={241},
+  pages={867--876},
+  year={2017},
+  publisher={Cambridge University Press}
+}
+
+@article{podolskiy2018nocturnal,
+  title={Nocturnal thermal fracturing of a Himalayan debris-covered glacier revealed by ambient seismic noise},
+  author={Podolskiy, Evgeny A and Fujita, Koji and Sunako, Sojiro and Tsushima, Akane and Kayastha, Rijan B},
+  journal={Geophysical Research Letters},
+  volume={45},
+  number={18},
+  pages={9699--9709},
+  year={2018},
+  publisher={Wiley Online Library}
+}
+
+@article{aster2019interrogating,
+  title={Interrogating a Surging Glacier With Seismic Interferometry},
+  author={Aster, Richard C},
+  journal={Geophysical Research Letters},
+  volume={46},
+  number={14},
+  pages={8162--8165},
+  year={2019},
+  publisher={Wiley Online Library}
+}
+
+@article{macayeal2018seismology,
+  title={Seismology gets under the skin of the Antarctic Ice Sheet},
+  author={MacAyeal, DR},
+  journal={Geophysical Research Letters},
+  volume={45},
+  number={20},
+  pages={11--173},
+  year={2018},
+  publisher={Wiley Online Library}
+}
+
+@article{kohler2018kohler,
+  title={K{\"o}hler, A., Weidle, C., Nuth, C.(2018): Seismic Monitoring of Glacier Activity on Svalbard (SEISMOGLAC)-Report,(Scientific Technical Report STR-Data; 17/09)(GIPP Experiment and Data Archive), Potsdam: GFZ German Research Centre for Geosciences.},
+  author={K{\"o}hler, Andreas},
+  year={2018}
+}
+
+@inproceedings{walter2017microseismicity,
+  title={The Microseismicity of Glacier Sliding},
+  author={Walter, Fabian and R{\"o}{\"o}sli, Claudia and Kissling, Edi},
+  booktitle={EGU General Assembly Conference Abstracts},
+  volume={19},
+  pages={5191},
+  year={2017}
+}
+
+@article{preiswerk2018high,
+  title={High-Frequency (> 2 Hz) Ambient Seismic Noise on High-Melt Glaciers: Green's Function Estimation and Source Characterization},
+  author={Preiswerk, Lukas E and Walter, Fabian},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={123},
+  number={8},
+  pages={1667--1681},
+  year={2018},
+  publisher={Wiley Online Library}
+}
+
+@article{o2018detection,
+  title={Detection of ice wedge cracking in permafrost using miniature accelerometers},
+  author={O'Neill, H Brendan and Christiansen, Hanne H},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={123},
+  number={4},
+  pages={642--657},
+  year={2018},
+  publisher={Wiley Online Library}
+}
+@article{cooley2017tidal,
+  title={Tidal and structural controls on seismic events near the grounding line at Beardmore Glacier, Antarctica},
+  author={Cooley, Jade},
+  year={2017}
+}
+
+@inproceedings{georgieva2019ice,
+  title={Ice generated events in Perunika Glacier, recorded by LIVV station},
+  author={Georgieva, G and Dimitrova, L and Gourev, V},
+  booktitle={10th Congress of the Balkan Geophysical Society},
+  year={2019}
+}
+
+@article{chaput2018near,
+  title={Near-Surface Environmentally Forced Changes in the Ross Ice Shelf Observed With Ambient Seismic Noise},
+  author={Chaput, Julien and Aster, Richard C and McGrath, Daniel and Baker, M and Anthony, Robert E and Gerstoft, Peter and Bromirski, P and Nyblade, A and Stephen, Ralph A and Wiens, Douglas A and others},
+  journal={Geophysical Research Letters},
+  volume={45},
+  number={20},
+  pages={11--187},
+  year={2018},
+  publisher={Wiley Online Library}
+}
+
+@article{preiswerk2019effects,
+  title={Effects of geometry on the seismic wavefield of Alpine glaciers},
+  author={Preiswerk, Lukas E and Michel, Clotaire and Walter, Fabian and F{\"a}h, Donat},
+  journal={Annals of Glaciology},
+  volume={60},
+  number={79},
+  pages={112--124},
+  year={2019},
+  publisher={Cambridge University Press}
+}
+
+@article{montgomery2017investigation,
+  title={Investigation of firn aquifer structure in southeastern Greenland using active source seismology},
+  author={Montgomery, Lynn N and Schmerr, Nicholas and Burdick, Scott and Forster, Richard R and Koenig, Lora and Legchenko, Anatoly and Ligtenberg, Stefan and Mi{\`e}ge, Cl{\'e}ment and Miller, Olivia L and Solomon, D Kip},
+  journal={Frontiers in Earth Science},
+  volume={5},
+  pages={10},
+  year={2017},
+  publisher={Frontiers}
+}
+
+@inproceedings{bartholomaus2017spatio,
+  title={Spatio-temporal evolution of efficient subglacial water discharge at Lemon Creek Glacier, Alaska},
+  author={Bartholomaus, TC and Labedz, CR and Amundson, JM and Gimbert, F and Tsai, VC and Vore, ME and Karplus, MS},
+  booktitle={AGU Fall Meeting Abstracts},
+  year={2017}
+}
+
+@inproceedings{labedz2017seismic,
+  title={Seismic observations of subglacial water discharge from glacier-dammed lake drainage at Lemon Creek Glacier, Alaska},
+  author={Labedz, Celeste Ritter and Bartholomaus, TC and Gimbert, Florent and Amundson, Jason M and Vore, Margot Elizabeth and Karplus, Marianne S and Tsai, Victor C},
+  booktitle={AGU Fall Meeting Abstracts},
+  year={2017}
+}
+
+@phdthesis{preiswerk2018monitoring,
+  title={Monitoring and Structural Studies with Glacier Seismology},
+  author={Preiswerk, Lukas E},
+  year={2018},
+  school={ETH Zurich}
+}
+
+@inproceedings{lindner2017monitoring,
+  title={Monitoring the englacial fracture state using virtual-reflector seismology},
+  author={Lindner, F and Weemstra, C and Walter, F and Hadziioannou, C},
+  booktitle={AGU Fall Meeting Abstracts},
+  year={2017}
+}
+
+@inproceedings{walter2017repeating,
+  title={Repeating ice-earthquakes beneath David Glacier from the 2012-2015 TAMNNET array},
+  author={Walter, Jacob I and Peng, Z and Hansen, SE},
+  booktitle={AGU Fall Meeting Abstracts},
+  year={2017}
+}
+
+@article{gajek2017automating,
+  title={Automating long-term glacier dynamics monitoring using single-station seismological observations and fuzzy logic classification: a case study from Spitsbergen},
+  author={Gajek, W and Trojanowski, J and Malinowski, M},
+  journal={Journal of Glaciology},
+  volume={63},
+  number={240},
+  pages={581--592},
+  year={2017},
+  publisher={Cambridge University Press}
+}
+
+@article{cooley2019tidal,
+  title={Tidal and spatial variability of flow speed and seismicity near the grounding zone of Beardmore Glacier, Antarctica},
+  author={Cooley, Jade and Winberry, Paul and Koutnik, Michelle and Conway, Howard},
+  journal={Annals of Glaciology},
+  pages={1--8},
+  year={2019},
+  publisher={Cambridge University Press}
+}
+
+@inproceedings{graff2017microseismic,
+  title={Microseismic Stick-Slip Motion of Alpine Glaciers},
+  author={Gr{\"a}ff, D and Walter, F},
+  booktitle={AGU Fall Meeting Abstracts},
+  year={2017}
+}
+
+@inproceedings{aso2016moulins,
+  title={Moulins Detected as Ambient Noise Sources at the Kaskawulsh Glacier},
+  author={Aso, N and Tsai, VC and Schoof, C and Whiteford, A and Flowers, GE},
+  booktitle={AGU Fall Meeting Abstracts},
+  year={2016}
+}
+
+@phdthesis{guandique2019using,
+  title={Using Shear Waves to Characterize a Firn Aquifer on the Helheim Glacier in Southeast Greenland},
+  author={Guandique, Jonathan Alexander},
+  year={2019}
+}
+
+@article{vore2019seismic,
+  title={Seismic tremor reveals spatial organization and temporal changes of subglacial water system},
+  author={Vore, Margot E and Bartholomaus, Timothy C and Winberry, J Paul and Walter, Jacob I and Amundson, Jason M},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={124},
+  number={2},
+  pages={427--446},
+  year={2019},
+  publisher={Wiley Online Library}
+}
+
+@article{winberry2020glacial,
+  title={Glacial Earthquakes and Precursory Seismicity Associated With Thwaites Glacier Calving},
+  author={Winberry, J Paul and Huerta, Audrey D and Anandakrishnan, Sridhar and Aster, Richard C and Nyblade, Andrew A and Wiens, Douglas A},
+  journal={Geophysical Research Letters},
+  volume={47},
+  number={3},
+  pages={e2019GL086178},
+  year={2020},
+  publisher={Wiley Online Library}
+}
+
+@article{kohler2019characterization,
+  title={Characterization of seasonal glacial seismicity from a single-station on-ice record at Holtedahlfonna, Svalbard},
+  author={K{\"o}hler, Andreas and Maupin, Valerie and Nuth, Christopher and Van Pelt, Ward},
+  journal={Annals of Glaciology},
+  volume={60},
+  number={79},
+  pages={23--36},
+  year={2019},
+  publisher={Cambridge University Press}
+}
+
+@article{lipovsky2019glacier,
+  title={Glacier sliding, seismicity and sediment entrainment},
+  author={Lipovsky, Bradley Paul and Meyer, Colin R and Zoet, Lucas K and McCarthy, Christine and Hansen, Dougal D and Rempel, Alan W and Gimbert, Florent},
+  journal={Annals of Glaciology},
+  volume={60},
+  number={79},
+  pages={182--192},
+  year={2019},
+  publisher={Cambridge University Press}
+}
+
+@article{cooley2019tidal,
+  title={Tidal and spatial variability of flow speed and seismicity near the grounding zone of Beardmore Glacier, Antarctica},
+  author={Cooley, Jade and Winberry, Paul and Koutnik, Michelle and Conway, Howard},
+  journal={Annals of Glaciology},
+  volume={60},
+  number={79},
+  pages={37--44},
+  year={2019},
+  publisher={Cambridge University Press}
+}
+
+@article{minowa2019tide,
+  title={Tide-modulated ice motion and seismicity of a floating glacier tongue in East Antarctica},
+  author={Minowa, Masahiro and Podolskiy, Evgeny A and Sugiyama, Shin},
+  journal={Annals of Glaciology},
+  volume={60},
+  number={79},
+  pages={57--67},
+  year={2019},
+  publisher={Cambridge University Press}
+}
+
+@article{olinger2019tidal,
+  title={Tidal and thermal stresses drive seismicity along a major Ross Ice Shelf rift},
+  author={Olinger, SD and Lipovsky, BP and Wiens, DA and Aster, RC and Bromirski, PD and Chen, Z and Gerstoft, P and Nyblade, Andrew Arnold and Stephen, RA},
+  journal={Geophysical Research Letters},
+  volume={46},
+  number={12},
+  pages={6644--6652},
+  year={2019},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{helmstetter2019seismic,
+  title={Seismic monitoring of the Gugla rock glacier: observations and perspectives.},
+  author={Helmstetter, Agn{\`e}s and Guillemot, Antoine and Baillet, Laurent and Mayoraz, Rapha{\"e}l},
+  booktitle={Geophysical Research Abstracts},
+  volume={21},
+  year={2019}
+}
+
+@inproceedings{schoonman2019investigating,
+  title={Investigating hydrological forcing of fast glacier flow in Greenland using passive seismology.},
+  author={Schoonman, Charlotte and Christoffersen, Poul and Hofstede, Coen and Young, Tun Jan and Pettersson, Rickard and McCallum, Adrian and Doyle, Sam and Hubbard, Bryn},
+  booktitle={Geophysical Research Abstracts},
+  volume={21},
+  year={2019}
+}
+
+@inproceedings{roux2019using,
+  title={Using dense array seismology to observe glacier dynamics: the RESOLVE-Argenti{\`e}re project.},
+  author={Roux, Philippe and Gimbert, Florent and Nanni, Ugo and Helmstetter, Agn{\`e}s and Urruty, Benoit and Garambois, St{\'e}phane and Walpersdorf, Andrea and Vincent, Christian and Lecointre, Albanne and Langlais, Mickael},
+  booktitle={Geophysical Research Abstracts},
+  volume={21},
+  year={2019}
+}
+
+@inproceedings{graff2019subglacial,
+  title={What do Subglacial Stick-Slip Asperities tell us about Stress Distributions and Dynamic Triggering on Natural Faults?},
+  author={Gr{\"a}ff, Dominik and Walter, Fabian},
+  booktitle={27th International Union of Geodesy and Geophysics General Assembly (IUGG 2019)},
+  pages={IUGG19--1447},
+  year={2019},
+  organization={ETH Zurich, Laboratory of Hydraulics, Hydrology and Glaciology (VAW)}
+}
+
+@article{preiswerk2019effects,
+  title={Effects of geometry on the seismic wavefield of Alpine glaciers},
+  author={Preiswerk, Lukas E and Michel, Clotaire and Walter, Fabian and F{\"a}h, Donat},
+  journal={Annals of Glaciology},
+  volume={60},
+  number={79},
+  pages={112--124},
+  year={2019},
+  publisher={Cambridge University Press}
+}
+
+@article{kohler2019glacier,
+  title={Glacier dynamic ice loss quantified through seismic eyes (CALVINGSEIS)-Report},
+  author={K{\"o}hler, Andreas and Weidle, Christian and Nuth, Christopher},
+  year={2019},
+  publisher={GFZ German Research Centre for Geosciences}
+}
+
+@article{aster2019interrogating,
+  title={Interrogating a Surging Glacier With Seismic Interferometry},
+  author={Aster, Richard C},
+  journal={Geophysical Research Letters},
+  volume={46},
+  number={14},
+  pages={8162--8165},
+  year={2019},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{nanni2019diurnal,
+  title={From diurnal to seasonal dynamics of the subglacial hydrology revealed by cryoseismology.},
+  author={Nanni, Ugo and Gimbert, Florent and Vincent, Christian and Walter, Fabian and Piard, Luc and Moreau, Luc and Graeff, Dominik},
+  booktitle={Geophysical Research Abstracts},
+  volume={21},
+  year={2019}
+}
+
+@incollection{kohler2020seismological,
+  title={Seismological monitoring of Svalbard's cryosphere: current status and knowledge gaps (CRYOSEIS)},
+  author={K{\"o}hler, Andreas and Gajek, Wojciech and Malinowski, Michal and Schweitzer, Johannes and Majdanski, Mariusz and Geissler, Wolfram and Chamarczuk, Michal and Wuestefeld, Andreas},
+  booktitle={SESS report 2019},
+  pages={136--159},
+  year={2020},
+  publisher={Svalbard Integrated Arctic Earth Observing System}
+}
+
+@inproceedings{lutz2019constraining,
+  title={Constraining ice anisotropy and temperature from active source borehole seismology in the Ross Ice Shelf.},
+  author={Lutz, Franz and Eccles, Jennifer and Prior, David and Hulbe, Christina},
+  booktitle={Geophysical Research Abstracts},
+  volume={21},
+  year={2019}
+}
+
+@phdthesis{hudson2019investigating,
+  title={Investigating volcanic and glacial processes using microseismicity},
+  author={Hudson, Thomas Samuel},
+  year={2019},
+  school={University of Cambridge}
+}
+
+@article{walter2020distributed,
+  title={Distributed Acoustic Sensing of Microseismic Sources and Wave Propagation in Glaciated Terrain},
+  author={Walter, Fabian and Gr{\"a}ff, Dominik and Lindner, Fabian and Paitz, Patrick and K{\"o}pfli, Manuela and Chmiel, Malgorzata and Fichtner, Andreas},
+  year={2020},
+  publisher={EarthArXiv}
+}
+
+@article{sergeant2016complex,
+  title={Complex force history of a calving-generated glacial earthquake derived from broadband seismic inversion},
+  author={Sergeant, Amandine and Mangeney, Anne and Stutzmann, El{\'e}onore and Montagner, Jean-Paul and Walter, Fabian and Moretti, Laurent and Castelnau, Olivier},
+  journal={Geophysical Research Letters},
+  volume={43},
+  number={3},
+  pages={1055--1065},
+  year={2016},
+  publisher={Wiley Online Library}
+}
+
+@article{sergeant2018numerical,
+  title={Numerical modeling of iceberg capsizing responsible for glacial earthquakes},
+  author={Sergeant, Amandine and Yastrebov, Vladislav A and Mangeney, Anne and Castelnau, Olivier and Montagner, Jean-Paul and Stutzmann, El{\'e}onore},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={123},
+  number={11},
+  pages={3013--3033},
+  year={2018},
+  publisher={Wiley Online Library}
+}
+
+@article{olsen2019constraints,
+  title={Constraints on Terminus Dynamics at Greenland Glaciers From Small Glacial Earthquakes},
+  author={Olsen, Kira G and Nettles, Meredith},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={124},
+  number={7},
+  pages={1899--1918},
+  year={2019},
+  publisher={Wiley Online Library}
+}
+
+@article{zhan2019seismic,
+  title={Seismic noise interferometry reveals transverse drainage configuration beneath the surging Bering Glacier},
+  author={Zhan, Zhongwen},
+  journal={Geophysical Research Letters},
+  volume={46},
+  number={9},
+  pages={4747--4756},
+  year={2019},
+  publisher={Wiley Online Library}
+}
+
+@article{behm2020seismic,
+  title={Seismic characterization of a rapidly-rising J{\"o}kulhlaup cycle at the AP Olsen Ice Cap, NE-Greenland},
+  author={Behm, Michael and Walter, Jacob I and Binder, Daniel and Cheng, Feng and Citterio, Michele and Kulessa, Bernd and Langley, Kirsty and Limpach, Phillipe and Mertl, Stefan and Sch{\"o}ner, Wolfgang and others},
+  journal={Journal of Glaciology},
+  pages={1--19},
+  year={2020},
+  publisher={Cambridge University Press}
+}

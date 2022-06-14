@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+       <html> 
+       <head> 
+        <link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/8mBKxrs/earth-PNG31.png" />
+       <meta http-equiv="content-type" content="text/html; charset=UTF-8"/> 
+           <title>CryoSeisMap</title>
+  
+
+           <script type="text/javascript" 
+                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhyiE6bPbpCvsD1B1J6BRkL9sf3C-VDZU"
+                   src="http://maps.google.com/maps/api/js?sensor=false"></script>
+           <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/OverlappingMarkerSpiderfier/1.0.3/oms.min.js"></script>
+         <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      .with-margin {
+          margin-bottom: 75px;
+          padding: 25px;
+        }
+
+      .with-padding-with-margin{
+        padding-bottom: 45px;
+      }
+      .with-padding-at-top-with-margin{
+        padding-bottom: 5px;
+      }
+      .with-padding-under-with-margin{
+           padding-bottom: 165px;
+     
+      }
+
+      .solid-line {
+        border-style: solid;
+        background-color: #f2f2f2;
+         color: Black;
+      }
+      area {
+        display: block;
+      }
+      footer {
+        padding-left: 25px;
+        padding-right:25px;
+        background-color: #333;
+        color: #f2f2f2;
+       order-top:solid #f2f2f2;
+        }
+
+
+      #home:hover {
+          background-color: #333;
+          color: #f2f2f2;
+          text-decoration: none;
+        }
+
+      #map {
+        height: 500px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+
+       #dds {
+        font-size: 18px;
+        color: #f2f2f2;
+       }
+
+      .navbar {
+          overflow: hidden;
+          background-color: #313131;
+          color: #f2f2f2;
+          font-weight:bold;
+          position: fixed;
+          padding-bottom:10px;
+          top: 0;
+          width: 100%;
+          border-bottom: solid #f2f2f2;
+        }
+        body {
+          margin:0;
+          position: relative;
+          z-index: -1;
+        }
+        .navbar a:hover {
+         background-color: #313131;
+         color: #f2f2f2; 
+         text-decoration: none;
+        }
+
+        .navbar a{
+          float: left;
+          background-color: #313131;
+         color: #f2f2f2;
+
+
+        }
+        #whitebox {
+        background-color: #eeeeee;
+         color: Black;
+         padding:25px;
+
+        }
+    .col-sm-4 {
+      padding:40px;
+    }
+    .main {
+      padding: 25px;
+      margin-top: 25px;
+      position: relative;
+      z-index: -1;
+      background-color: #333;
+          color: #f2f2f2;
+      
+    }
+    p {
+      color:Black;
+    }
+
+     </style>
+       </head> 
+
+       <body> 
+        <div class="navbar">
+
+        <a id="home" href="/" style="text-align:left;font-size:32px">CryoSeisMap</a>
+        <a href="#Mapping" style="text-align:left;font-size:24px">Map</a>
+        <a href="#About" style="text-align:left;font-size:24px">README</a>
+        <a href="#Downloads" style="text-align:left;font-size:24px">Downloads</a>
+        <a href="#Contact" style="text-align:left;font-size:24px">Contact</a>
+      </div>
+        <div class="container-fluid main">
+          <div id = "Mapping" class="row with-padding-at-top-with-margin"> </div>
+          <br>
+          <p style="text-align:center" class="h4"> Visualizing cryoseismology studies spatially by research focus</p>
+          <div class="row with-margin">
+          <div class="col-8">
+        <div id="map"></div>  </div>
+        <div class="col-3 solid-line">
+          <p><b>Choose event source(s) of interest:</b></p>
+          <div class="marker-count">
+              Total markers: <span></span>
+          </div>
+          <form method="get">
+            <input type="checkbox" id="all" name="alltype" onClick="toggle(this)" value="selectAll"> Select All<br>
+             
+            <input type="checkbox" id="calving" name="etype" value="Calving" onclick="displayMarkers(this,2);"> Calving (45)<br>
+             
+            <input type="checkbox" id="surface" name="etype" value="Surface" onclick="displayMarkers(this,3);"> Surface crevassing/cracking (41)<br>
+             
+            <input type="checkbox" id="englacial" name="etype" value="Englacial" onclick="displayMarkers(this,4);"> Englacial (melt related) (34)<br>
+             
+            <input type="checkbox" id="basal_m" name="etype" value="Basal" onclick="displayMarkers(this,5);"> Basal (melt related) (27)<br>
+             
+            <input type="checkbox" id="basal_ss" name="etype" value="Basalss" onclick="displayMarkers(this,6);"> Basal (stick-slip) (39) <br>
+
+            <input type="checkbox" id="iceberg" name="etype" value="Iceberg" onclick="displayMarkers(this,8);"> Iceberg (11)<br>
+             
+            <input type="checkbox" id="ocean" name="etype" value="ocean" onclick="displayMarkers(this,9);"> Ocean/tidal interactions (29)<br>
+             
+            <input type="checkbox" id="teleseismic" name="etype" value="Teleseismic" onclick="displayMarkers(this,10);"> Teleseismic (5)<br>
+             
+            <input type="checkbox" id="unknown" name="etype" value="Unknown" onclick="displayMarkers(this,11);"> General/review (36)<br>
+
+            <br>
+            <input type="submit" onclick="unDisplayMarkers(this)" value="Clear all"><br> <br> 
+            
+            
+
+          </form>
+      </div>
+    </div> 
+
+
+<div id = "About" class="row with-padding-with-margin"> </div>
+    <div  id = "AboutDiv" class="row with-margin">
+   
+      <div class="col-12">
+        <h1 style="text-align:center" > README </h1> 
+      </div>
+        <div class="row with-margin">
+        <div class="col-11"> 
+        <h6><i>What?</i></h6>Seismic signals from glaciated regions can be studied to “hear” glacier movement, in events that are commonly referred to as icequakes. Icequakes can have a variety of sources, listed as event sources above. <br><br>
+        <h6><i>Why?</i></h6> We made CryoSeisMap as a way to make the field of glacier seismology more accessible and open. Databases like CryoSeisMap also streamline the way that research is done by providing the comprehensive spatial and temporal context of a subject. As an example, from this analysis we could see that only one study in the past 70 years has married glacial seismology studies with data from Himalayan glaciers.<br><br>
+        <h6><i>Who?</i></h6> CryoSeisMap was built by and for scientists interested in or already involved in glacier seismology research. <br><br>
+        <h6><i>How?</i></h6> Below are the expanded definitions we used for deciding which studies fit into which category. For studies that did not outright say "This paper is specifically about calving processes in Greenland", we used these definitions to assign source type. We note that some studies covered multiple topics and/or the same topic but in multiple study sites. This is taken into account by tagging every study with all of the associated source types and event locations. After reviewing hundreds of studies, these source types were the most frequent ones identified, but are by no means all of the possible options.
+        <br> <br> 
+        <div id="whitebox"> 
+                <ul>
+          <li>Calving: per the definition, when chunks of ice break off at the terminus of ice.</li>
+          <li>Surface crevassing/cracking: Referring to the generation of crevasses or cracks at the surface of the ice. Also encompasses serac and ice falls. </li>
+          <li>Englacial: Concerning englacial processes such as sub-surface imaging, drainage pathways, firn densification, and more! Essentially anything that occurs between the surface and base. </li>
+          <li>Basal (melt related): Focused on signals from subglacial drainage or anything melt related at the base.</li>
+          <li>Basal (stick-slip): Focused on glacier motion at the bed.</li>
+          <li>Icebergs: Icebergs are the result of calving. Any study to do with the noises ice makes post-calving. Typically double dipped with ocean/tidal interactions, as icebergs are heard in this domain.</li>
+          <li>Ocean/tidal interactions: Anything to do with the tides or ice-ocean interactions.</li>
+          <li>Teleseismic: tremors recorded in glacial environments caused by earthquakes a large distance away that are not at the site.</li>
+          <li>General/review: review papers, discussions of general topics in the field, and unspecified event types which fit into the "general" category.</li>
+        </ul>
+        <i>A short note on event location specificity: To ensure that all event markers are displayed on the map, the original latitudes longitudes are used for inputs to our database, but a random number generator is used to then offset each event.</i>
+      </div>
+    </div>
+    </div>
+  </div>
+
+    <div id = "Downloads" class="row with-padding-with-margin"> </div>
+      <div  id = "DownloadsDiv" class="row with-margin">
+     
+      <div class="col-12">
+        <h1 style="text-align:center" > Downloads </h1>
+      </div>
+        <div class="row">
+          <div class="col-sm-4"> 
+       <a id="dds" target = "_blank" href="https://s3-ap-southeast-2.amazonaws.com/cryoseismap.com/text_files/refs_all.txt" download="refs.txt">Download all references as .txt</a> 
+       <p style="color:#f2f2f2;"> Preview: </p>
+       <img src="https://s3-ap-southeast-2.amazonaws.com/cryoseismap.com/text_files/txt_preview.PNG" width ="300px">
+     </div>
+
+     <div class="col-sm-4"> 
+            <a id="dds" target = "_blank" href="https://s3-ap-southeast-2.amazonaws.com/cryoseismap.com/text_files/refs.pdf" download="refs.pdf">Download all references as .pdf</a>
+            <p style="color:#f2f2f2;"> Preview: </p>
+       <img src="https://s3-ap-southeast-2.amazonaws.com/cryoseismap.com/text_files/PDF_preview.PNG" width ="300px">
+          </div>
+
+          <div class="col-sm-4"> 
+            <a id="dds" href="https://s3-ap-southeast-2.amazonaws.com/cryoseismap.com/text_files/all_refs.bib" download="refs.bib">Download all references as .bib</a> 
+            <p style="color:#f2f2f2;"> Preview: </p>
+       <img src="https://s3-ap-southeast-2.amazonaws.com/cryoseismap.com/text_files/bib_PREVIEW.PNG" width ="300px">
+          </div>
+
+      </div>
+    </div>
+
+<div id = "Contact" class="row with-padding-with-margin"> </div>
+          <br>
+      <div  id = "ContactDiv" class="row with-margin">
+      <div class="col-12">
+        <h1 style="text-align:center" >Contact</h1>
+          Please email cryoseismap (at) gmail (.) com with any questions! Let us know if your study is not included on the map and should be, if it's mischaracterized, or if you recently published and want to be added.
+      </div>
+      </div>
+      <div id = "nada" class="row with-padding-under-with-margin"> </div>
+
+  </div>
+
+        <script type="text/javascript"> 
+          
+            function toggle(source) {
+                    checkboxes = document.getElementsByName('etype');
+                    for(var i=0, n=checkboxes.length;i<n;i++) {
+                      checkboxes[i].checked = source.checked;
+                    }
+                   displayMarkers(source,1); // selectall
+                   displayMarkers(source,2);  //calving
+                   displayMarkers(source,3);  //surf crevassing
+                   displayMarkers(source,4);  //englacialmelt
+                   displayMarkers(source,5);  //basalmelt
+                   displayMarkers(source,6);  //basal stick slip
+                   displayMarkers(source,7);  //serac? never used
+                   displayMarkers(source,8);  //iceberg
+                   displayMarkers(source,9);  // ocean
+                   displayMarkers(source,10); // teleseismic
+                   displayMarkers(source,11);  //general
+                  }
+
+
+              function which_marked(){
+                if (document.getElementById("all").checked == true){
+                    console.log("hey you!")
+                    name = "all"
+                }  
+                else if (document.getElementById("calving").checked == true) {
+                  //need to keep adding to output
+                  output.push("Kiwi", "lksdflskdf", "Pineapple");
+                  }
+
+                  else if (document.getElementById("surface").checked == true) {
+                  //need to keep adding to output
+                  }
+                  else if (document.getElementById("englacial").checked == true) {
+                  //need to keep adding to output
+                  }
+                  else if (document.getElementById("basal_m").checked == true) {
+                  //need to keep adding to output
+                  }
+                  else if (document.getElementById("basal_ss").checked == true) {
+                  //need to keep adding to output
+                  }
+                  else if (document.getElementById("serac_fall").checked == true) {
+                  //need to keep adding to output
+                  }
+                  else if (document.getElementById("iceberg").checked == true) {
+                  //need to keep adding to output
+                  }
+                  else if (document.getElementById("ocean").checked == true) {
+                  //need to keep adding to output
+                  }
+                  else if (document.getElementById("teleseismic").checked == true) {
+                  //need to keep adding to output
+                  }              
+                  else if (document.getElementById("unknown").checked == true) {
+                  //need to keep adding to output
+                  }           
+                  else{
+                    alert("you have to click something")
+                  }
+
+                return name
+              }
+
+       var events_all = [
+            ['Glacier microseismicity (West, 2010)', 60.3022, -143.4197,4],
+            ['Glacier microseismicity (West, 2010)', 60.3022, -143.4197, 3],
+            ['Singing Icebergs (Muller, 2005)', -70.6666, -8.2667, 8],
+            ['Intermediate-depth icequakes and harmonic tremor in an Alpine glacier (Glacier dArgentiere, France): Evidence for hydraulic fracturing? (Helmstetter, 2014)', 45.9451, 6.9948,3], 
+            ['Intermediate-depth icequakes and harmonic tremor in an Alpine glacier (Glacier dArgentiere, France): Evidence for hydraulic fracturing? (Helmstetter, 2014)', 45.9451, 6.9948,4], 
+            ['Intermediate-depth icequakes and harmonic tremor in an Alpine glacier (Glacier dArgentiere, France): Evidence for hydraulic fracturing? (Helmstetter, 2014)', 45.9451, 6.9948,5], 
+            ['Intermediate-depth icequakes and harmonic tremor in an Alpine glacier (Glacier dArgentiere): Evidence for hydraulic fracturing? (Helmstetter, 2014)', 45.9451, 6.9948,3], 
+            ['Seismic multiplet response triggered by melt at Blood Falls, Taylor Glacier, Antarctica (Carmichael, 2015)',69.2198, -51.0986,4],
+            ['Basal icequakes during changing subglacial water pressures beneath Gornergletscher, Switzerland (Walter, 2008)',45.9668, 7.7969,5],
+            ['Glacier slip and seismicity induced by surface melt (Moore, 2013)',66.6661, 13.9253,6],
+            ['Studies on thermally induced fractures and snowquakes of polar snow cover (Nishio, 1983)',-70.6922,44.3257,3],
+            ['Numerical modeling of a gravity-driven instability of a cold hanging glacier: reanalysis of the 1895 break-off of Altelsgletscher, Switzerland (Faillettaz, 2011)', 46.4887, 8.0531,3],
+  
+            ['Icequakes coupled with surface displacements for predicting glacier break-off (Faillettaz, 2011)', 46.1013, 7.7162,2],
+            ['Short period motion events on Variegated Glacier as observed by automatic photography and seismic methods (Harrison, 1986)', 59.9983, -139.3317,4],
+            ['Effective discrimination of icequakes on seismic records from Mawson station (Sinadinovski, 1999)', -67.6033, 62.8742,2],
+            ['Effective discrimination of icequakes on seismic records from Mawson station (Sinadinovski, 1999)', -67.6033, 62.8742,3],
+            ['A brief study of ice tremors* (Crary, 1955)', 70.1267, -143.6634,3],
+            ['Glacial long period seismic events at Katla volcano, Iceland (Jonsdottir, 2009)', 63.6467, -19.1303,3],
+            ['Glacial long period seismic events at Katla volcano, Iceland (Jonsdottir, 2009)', 63.6467, -19.1303,11],
+            ['Seismicity related to the glacier of Cotopaxi Volcano, Ecuador (Metaxian, 2003)', -0.6838, -78.4372,4],
+            ['The search for seismic signatures of movement at the glacier bed in a polythermal valley glacier (Pomeroy, 2013',67.8833, 18.5667,4],
+            ['Microseismic activity within a serac zone in an alpine glacier (Glacier d’Argentiere, Mont Blanc, France) (Roux, 2008)', 45.9451, 6.9948,3],
+            ['Shallow repeating seismic events under an alpine glacier at Mount Rainier, Washington, USA (Thelen, 2013)', 46.8523, -121.7603,6],
+            ['Simultaneous teleseismic and geodetic observations of the stick--slip motion of an Antarctic ice stream (Wiens, 2008)', -83.666667, -145,6],
+            ['Iceberg calving during transition from grounded to floating ice: Columbia Glacier, Alaska (Walter, 2010)', 61.2197, -146.8953,2],
+            ['Iceberg calving as a primary source of regional-scale glacier-generated seismicity in the St. Elias Mountains, Alaska (ONeel, 2009)', 60.5000, -139.5000,2],
+            ['Basal mechanics of ice streams: Insights from the stick-slip motion of Whillans Ice Stream, West Antarctica (Winberry, 2009)', -83.666667, -145,6],
+            ['Dynamics of stick--slip motion, Whillans Ice Stream, Antarctica (Winberry, 2011)', -83.666667, -145,6],
+            ['Seismic and geodetic evidence for grounding-line control of Whillans Ice Stream stick-slip events (Pratt, 2013)', -83.666667, -145,6],
+            ['Calving seismicity from iceberg--sea surface interactions (Bartholomaus, 2012)',60.3056, -141.7269,2],
+            ['Calving seismicity from iceberg--sea surface interactions (Bartholomaus, 2012)',60.3056, -141.7269,9],
+            ['Seismic activity and surface motion of a steep temperate glacier: a study on Triftgletscher, Switzerland (Dalban Canassy, 2012)', 46.6641, 8.3707,3],
+            ['Seismic activity and surface motion of a steep temperate glacier: a study on Triftgletscher, Switzerland (Dalban Canassy, 2012)', 46.6641, 8.3707,3],
+            ['Tide-modulated ice motion and seismicity of a floating glacier tongue in East Antarctica (Minowa, 2019',-69.2167, 39.8000,3],
+            ['Tide-modulated ice motion and seismicity of a floating glacier tongue in East Antarctica (Minowa, 2019',-69.2167, 39.8000,6],
+            ['Tide-modulated ice motion and seismicity of a floating glacier tongue in East Antarctica (Minowa, 2019',-69.2167, 39.8000,9],
+            ['Glacier sliding, seismicity and sediment entrainment (Lipovsky, 2019)', -83.666667, -145,6],
+            ['Seismic observations of crevasse growth following rain-induced glacier acceleration, Haupapa/Tasman Glacier, New Zealand (Taylor-Offord, 2019)', -43.5983, 170.2167,3],
+            ['Narrowband signals recorded near a moulin that are not moulin tremor: a cautionary short note (Carmichael, 2019)', 69.2198, -51.0986,4],
+            ['Sustained seismic tremors and icequakes detected in the ablation zone of the Greenland ice sheet (Röösli, 2014)', 69.2198, -51.0986, 4],
+            ['Sustained seismic tremors and icequakes detected in the ablation zone of the Greenland ice sheet (Röösli, 2014)', 69.2198, -51.0986, 3],
+            ['Seismic observations of glaciogenic ocean waves (micro-tsunamis) on icebergs and ice shelves (MacAyeal, 2009)', -81.5000, -175.0000, 2],
+            ['Seismic observations of glaciogenic ocean waves (micro-tsunamis) on icebergs and ice shelves (MacAyeal, 2009)', -81.5000, -175.0000, 5],
+            ['Seismic observations of glaciogenic ocean waves (micro-tsunamis) on icebergs and ice shelves (MacAyeal, 2009)', -81.5000, -175.0000, 8],
+            ['Seismic observations of glaciogenic ocean waves (micro-tsunamis) on icebergs and ice shelves (MacAyeal, 2009)', -81.5000, -175.0000, 9],
+            ['Glacier, fjord, and seismic response to recent large calving events, Jakobshavn Isbr{\ae}, Greenland (Amundson, 2008)', 69.2198, 51.0986, 2],
+            ['Glacial rumblings from Jakobshavn ice stream, Greenland (Rial, 2009)', 69.2198, -51.0986,2],
+            ['Motion of an Antarctic glacier by repeated tidally modulated earthquakes (Zoet, 2012)', -75.3334, 161.2564, 6],
+            ['Motion of an Antarctic glacier by repeated tidally modulated earthquakes (Zoet, 2012)', -75.3334, 161.2564, 9],
+            ['Glacial Earthquakes in Greenland and Antarctica (Nettles and Ekstrom, 2010)', 71.7069, -42.6043, 2],
+            ['Glacial Earthquakes in Greenland and Antarctica (Nettles and Ekstrom, 2010)', 71.7069, -42.6043, 6],
+            ['Glacial Earthquakes in Greenland and Antarctica (Nettles and Ekstrom, 2010)', 71.7069, -42.6043, 8],
+            ['Automated detection of basal icequakes and discrimination from surface crevassing (Hudson, 2019)', 64.4220, -16.7902, 3,5,6],
+            ['Antarctic icequakes triggered by the 2010 Maule earthquake in Chile (Peng, 2014)', -82.8628, 135.0000, 10],
+            ['Characteristic seismic waves associated with cryosphere dynamics in Eastern Dronning Maud Land, East Antarctica (Kanao)', -69.004448, 39.581713, 10],
+            ['Source mechanics for monochromatic icequakes produced during iceberg calving at Columbia Glacier, AK (ONeel, 2007)', 61.2197, -146.8953, 2],
+            ['Seismicity associated with icebergs calving from glaciers near Mawson, East Antarctica (Gaull, 1992)', -67.6033, 62.8742,2],
+            ['Seismic multiplet response triggered by melt at Blood Falls, Taylor Glacier, Antarctica (Carmichael, 2012)', -77.7333, 162.1667, 4],
+            ['Observations of the seasonality of the Antarctic microseismic signal, and its association to sea ice variability (Grob, 2011)', -82.8628, 135.0000, 9],
+            ['Pattern of cryospheric seismic events observed at Ekström Ice Shelf, Antarctica (Hammer, 2015)', -71,-8, 4],
+            ['Pattern of cryospheric seismic events observed at Ekström Ice Shelf, Antarctica (Hammer, 2015)', -71,-8, 9],
+            ['Deep icequakes: What happens at the base of Alpine glaciers? (Walter, 2013)', 46.5601, 8.5611, 5],
+            ['Deep icequakes: What happens at the base of Alpine glaciers? (Walter, 2013)', 46.5601, 8.5611, 6],
+            ['Swarms of repeating stick-slip icequakes triggered by snow loading at Mount Rainier volcano (Allstadt, 2014)',46.8523, -121.7603, 6],
+            ['An automated approach to the location of icequakes using seismic waveform amplitudes (Jones, 2013)', 67.0958, -50.2167, 2],
+            ['Tide-induced microseismicity in the Mertz glacier grounding area, East Antarctica (Barruol, 2013)',-67.4998, 144.7494, 9],
+            ['Icequakes and glacier motion: The hans glacier, spitsbergen (Cichowicz, 1983)', 77.8750, 20.9752, 2],
+            ['Icequakes and glacier motion: The hans glacier, spitsbergen (Cichowicz, 1983)', 77.8750, 20.9752, 3],
+            ['Calving icebergs: A source of low-frequency seismic signals from Columbia Glacier, Alaska (Qamar, 1988)', 61.2197, -146.8953, 2],
+            ['Seismic Evidence for Glacier Motion (VanWormer, 1973)', 61.1095, -147.9191, 11],
+            ['Icequakes On Ekström Ice Shelf Near Atka Bay, Antarctica (Osten-Woldenburg, 1989)', -71,-8,9],
+            ['Studies in Glacier Physics on the Penny Ice Cap, Baffin Island, 1953: Part III: Seismic Sounding (Röthlisberger, 1955)', 67.2500, -66.0000,3],
+            ['Nucleation and seismic tremor associated with the glacial earthquakes of Whillans Ice Stream, Antarctica (Winberry, 2013)',-83.666667, -145,6],
+            ['Tremor during ice-stream stick slip (Lipovsky, 2016)', -83.666667, -145,6],
+            ['Thermally induced icequakes detected on blue ice areas of the East Antarctic ice sheet (Lombardi, 2019)', -71.9499, 23.3470,3],
+            ['Icequakes on the Athabasca glacier (Neave, 1970)', 52.1897, -117.2578,3],
+            ['Implications of basal micro-earthquakes and tremor for ice stream mechanics: Stick-slip basal sliding and till erosion (Barcheck, 2018)',-83.666667, -145,6],
+            ['An investigation of icequakes on the Greenland icesheet near Jakobshavn icestream (Qamar and Lawrence, 1983)',69.2198, -51.0986,11],
+  ['The seismic noise environment of Antarctica (2014)',-82.8628, 135.0000,11],
+  ['Antarctic earthquakes (Adams, 1988)',-82.8628, 135.0000,11], 
+['Small earthquakes in Victoria land, Antarctica (Adams, 1969)',-71.25, 163,2],
+['A confirmed earthquake in continental Antarctica (Adams,1985)', -82.1000,54.9667,11],
+['Ice Stream C, Antarctica, sticky spots detected by microearthquake monitoring (Anandakrishnan, 1994)',-82.25, -145,6],
+['Ice m{\'e}lange dynamics and implications for terminus stability, Jakobshavn Isbr{\ae}, Greenland (Amundson, 2010)',69.2198, -51.0986,2],
+['Observing calving-generated ocean waves with coastal broadband seismometers, Jakobshavn Isbr{\ae}, Greenland (Amundson, 2010)',69.2198, -51.0986,2],
+['Observing calving-generated ocean waves with coastal broadband seismometers, Jakobshavn Isbr{\ae}, Greenland (Amundson, 2010)',69.2198, -51.0986,9],
+['Tidal forcing of basal seismicity of ice stream C, West Antarctica, observed far inland (Anandakrishnan, 1997)',-82.25, -145,9],
+['Micro-earthquakes beneath Ice Streams B and C, West Antarctica: observations and implications (Anandakrishnan,1993)',-82.25, -145,6],
+['Micro-earthquakes beneath Ice Streams B and C, West Antarctica: observations and implications (Anandakrishnan,1993)',-82.25, -145,6],
+['Observations of slip-coincident basal seismicity near the nucleation zone of Whillans Ice Plain stick-slip events (Barcheck, 2013)',-83.666667, -145,6],  
+['Tidal and seasonal variations in calving flux observed with passive seismology (Bartholomaus, 2015)',60.3056, -141.7269,2],
+['Subglacial discharge at tidewater glaciers revealed by seismic tremor (Bartholomaus, 2015)',69.2198, -51.0986,4],
+['Subglacial discharge at tidewater glaciers revealed by seismic tremor (Bartholomaus, 2015)',69.2198, -51.0986,5],
+['Subglacial discharge at tidewater glaciers revealed by seismic tremor (Bartholomaus, 2015)',60.3056, -141.7269,4],
+['Subglacial discharge at tidewater glaciers revealed by seismic tremor (Bartholomaus, 2015)',60.3056, -141.7269,5],
+['Episodic propagation of a rift on the Amery Ice Shelf, East Antarctica (Bassis, 2005)', -69.7500,71.0000,3],
+['Seismicity and deformation associated with ice-shelf rift propagation (Bassis, 2007)',-69.7500,71.0000,3],
+['An investigation into the forces that drive ice-shelf rift propagation on the Amery Ice Shelf, East Antarctica (Bassis, 2008)',-69.7500,71.0000,3],
+['Continuous HMM-based seismic-event classification at Deception Island, Antarctica (Benitez, 2006)',-62.9409, -60.5554,11],
+['Calving processes and the dynamics of calving glaciers',-82.8628, 135.0000,11],
+['Calving processes and the dynamics of calving glaciers',69.2198, -51.0986,11],
+['Tidally controlled stick-slip discharge of a West Antarctic ice (Bindschadler, 2003)',-79.467472, -112.086389,6], 
+['Microearthquakes Under and Alongside Ice Stream B, Antarctica. Detected By A New Passive Seismic Array (Blankenship, 1987)',-83.666667, -145,3],
+['Transoceanic infragravity waves impacting Antarctic ice shelves (Bromirski, 2010)',-81.5000, -175.0000,9],
+['Antarctic ice-shelf calving triggered by the Honshu (Japan) earthquake and tsunami, March 2011 (Brunt, 2011)',-76.300003, -148.000000,2], 
+['Antarctic ice-shelf calving triggered by the Honshu (Japan) earthquake and tsunami, March 2011 (Brunt, 2011)',-76.300003, -148.000000,10], 
+['Precursory seismicity associated with frequent, large ice avalanches on Iliamna volcano, Alaska, USA (Caplan-Auerbach, 2007)',60.0325, -153.0880,6],
+['Seismic observations of sea swell on the floating Ross Ice Shelf, Antarctica (Cathles,2009)',-81.5000, -175.0000,11],
+['Seventeen Antarctic seismic events detected by global surface waves and a possible link to calving events from satellite images (Chen, 2011)',-77.8555,-61.2928,3], 
+['Ice sheet grounding zone stabilization due to till compaction (Christianson, 2013)',-83.666667, -145,5],
+['Ice sheet grounding zone stabilization due to till compaction (Christianson, 2013)',-83.666667, -145,6],
+['Ice sheet grounding zone stabilization due to till compaction (Christianson, 2013)',-83.666667, -145,9],
+['Subglacial processes (Clarke, 2005)',-83.666667, -145,5],
+['Subglacial processes (Clarke, 2005)',-83.666667, -145,6],
+['Subglacial processes (Clarke, 2005)',-83.666667, -145,11],
+['Glacier crevasses: Observations, models, and mass balance implications (Colgan, 2016)',60.5000,-139.5000,2], 
+['Glacier crevasses: Observations, models, and mass balance implications (Colgan, 2016)',60.5000,-139.5000,11],
+['Glacier crevasses: Observations, models, and mass balance implications (Colgan, 2016)',69.2198, -51.0986,2], 
+['Glacier crevasses: Observations, models, and mass balance implications (Colgan, 2016)',69.2198, -51.0986,11],
+['Glacier crevasses: Observations, models, and mass balance implications (Colgan, 2016)',-82.8628, 135.0000,2], 
+['Glacier crevasses: Observations, models, and mass balance implications (Colgan, 2016)',-82.8628, 135.0000,11],
+['Greenland ice sheet monitoring network (GLISN): a seismological approach (Dahl-Jensen, 2010)',71.7069397,-42.6043015,11], 
+['Seasonal variations of glacier seismicity at the tongue of Rhonegletscher (Switzerland) with a focus on basal icequakes (Canassy, 2016)',46.6134, 8.3963,5],
+['Repeating earthquakes from rupture of an asperity under an Antarctic outlet glacier (Danesi, 2007)',-75.3334, 161.2564,5], 
+['Repeating earthquakes from rupture of an asperity under an Antarctic outlet glacier (Danesi, 2007)',-75.3334, 161.2564,6], 
+['Fracture propagation to the base of the Greenland Ice Sheet during supraglacial lake drainage (Das, 2008)',69.2198, -51.0986,3], 
+['Fracture propagation to the base of the Greenland Ice Sheet during supraglacial lake drainage (Das, 2008)',69.2198, -51.0986,2],
+['Fracture propagation to the base of the Greenland Ice Sheet during supraglacial lake drainage (Das, 2008)',69.2198, -51.0986,4],
+['Sudden increase in tidal response linked to calving and acceleration at a large Greenland outlet glacier (de Juan, 2010)',66.3500,-38.2000,2], 
+['Observations of glacier seismicity on Unteraargletscher (Deichmann, 1979)',46.5682, 8.2058,3],
+['A previously unreported type of seismic source in the firn layer of the East Antarctic Ice Sheet (Lough, 2015)',-80.5000, 76.0000,4], 
+['A previously unreported type of seismic source in the firn layer of the East Antarctic Ice Sheet (Lough, 2015)',-80.5000, 76.0000,3],
+['Seismic wave propagation in anisotropic ice-Part 1: Elasticity tensor and derived quantities from ice-core properties (Diez, 2015)',-75.0000,0.0667,4], 
+['Icequakes on the Athabasca glacier (Neave, 1970)',54.7212,-113.2859,3],
+['Stick-slip motion of an Antarctic Ice Stream: The effects of viscoelasticity (Goldberg, 2014)',-84.2500, -153.5000,6], 
+['Tidal and thermal stresses drive seismicity along a major Ross Ice Shelf rift (Olinger, 2019)',-81.5000, -175.0000,3],
+['Tidal and thermal stresses drive seismicity along a major Ross Ice Shelf rift (Olinger, 2019)',-81.5000, -175.0000,9],
+['Detecting and characterising an englacial conduit network within a temperate Swiss glacier using active seismic, ground penetrating radar and borehole analysis (Church, 2019)',46.6134, 8.3963,4], 
+['Avalanching glacier instabilities: Review on processes and early warning perspectives (Faillettaz, 2015)',46.10167, 7.71611,3],
+['Evidence of log-periodic oscillations and increasing icequake activity during the breaking-off of large ice masses (Faillettaz, 2008)',46.10167, 7.71611,3], 
+['Seasonality and increasing frequency of Greenland glacial earthquakes (Ekstrom, 2006)',69.2198, -51.0986,2],
+['Noisy icebergs from Antarctica and sound scope of the South Pacific Ocean (Matsumoto, 2013)',-81.5000, -175.0000,8], 
+['Life and death sounds of iceberg A53a (Dziak, 2013)', -57.5000,-40.0000,2], 
+['Life and death sounds of iceberg A53a (Dziak, 2013)',-57.5000,-40.0000,8], 
+['Life and death sounds of iceberg A53a (Dziak, 2013)',-57.5000,-40.0000,9], 
+['Glacio-Seismotectonics: Ice Sheets, Crustal Deformation and Seismicity (Sauber, 2000)',69.2198, -51.0986,11],
+['Ice tectonic deformation during the rapid in situ drainage of a supraglacial lake on the Greenland Ice Sheet (Doyle, 2013)',69.2198, -51.0986,5], 
+['Ice shelf structure derived from dispersion curve analysis of ambient seismic noise, Ross Ice Shelf, Antarctica (Diez, 2016)',-81.5000, -175.0000,4],
+['Localization and analysis of calving-related seismicity at Kronebreen, Svalbard (Koubova, 2015)',78.8333, 13.0000,2],
+['Regional passive seismic monitoring reveals dynamic glacier activity on Spitsbergen, Svalbard (Kohler, 2015)',78.9014, 13.4839,2],
+['Autonomous detection of calving-related seismicity at Kronebreen, Svalbard (Kohler, 2012)',78.8333, 13.0000,2],
+['Seismic Wave Interactions between the Atmosphere-Ocean-Cryosphere system and the Geosphere in Polar Regions (Masaki, 2011)',-69.004448, 39.581713,9],
+['Characteristic of seismic tremors with harmonic overtones in the Lutzow-Holm Bay region, East Antarctica: 2014-2015 (Masaki, 1994)',-69.1666667,37.5,2],
+['Characteristic of seismic tremors with harmonic overtones in the Lutzow-Holm Bay region, East Antarctica: 2014-2015 (Masaki, 1994)',-69.1666667,37.5,8],
+['Characteristic of seismic tremors with harmonic overtones in the Lutzow-Holm Bay region, East Antarctica: 2014-2015 (Masaki, 1994)',-69.1666667,37.5,9],
+['Seismic activity in and around the Antarctic continent (Kaminuma, 1994)',-82.8628, 135.0000,11],
+['Ice-front variation and tidewater behavior on Helheim and Kangerdlugssuaq Glaciers, Greenland (Joughin, 2008)',66.3500, -38.2000,2],
+['Ice-front variation and tidewater behavior on Helheim and Kangerdlugssuaq Glaciers, Greenland (Joughin, 2008)',66.3500, -38.2000,9],
+['Glacial earthquakes (Ekstrom, 2003)',61.2197,-146.8953,6], 
+['Humming glaciers (Heeszel, 2014)',46.5601, 8.5611,5], 
+['Seismicity within a propagating ice shelf rift: The relationship between icequake locations and ice shelf structure (Heeszel, 2014)',-69.7500, 71.0000,2], 
+['A special mechanism for some Antarctic earthquakes (Hatherton, 1962)',-77.8477, 166.7602,2], 
+['A special mechanism for some Antarctic earthquakes (Hatherton, 1962)',-77.8477, 166.7602,3], 
+['Microseisms at Scott Base (Hatherton, 1960)',-77.8477, 166.7602,9],
+['Deformation in Rutford Ice Stream, West Antarctica: measuring shear-wave anisotropy from icequakes (Harland, 2013)',-79, -81,4],
+['A study on ice faulting and icequake activity in the Lake Suwa,(2) temporal variation of m-value (Hamaguchi, 1978)',36.04833, 138.08417,9],
+['Earthquake seismology in Greenland--improved data with multiple applications (Larsen, 2006)',71.7069397,-42.6043015,11], 
+['Environmental seismology: What can we learn on earth surface processes with ambient noise? (Larose, 2015)',-82.8628, 135.0000,11],
+['Time reversal location of glacial earthquakes (Larmat, 2008)',60.5000,-139.5000,11], 
+['Seismic arrays on drifting ice floes: experiences from four deployments in the Arctic Ocean (Laderach, 2011)',65.2482, -60.4621,11], 
+['Tide-modulated ice flow variations drive seismicity near the calving front of Bowdoin Glacier, Greenland (Podolskiy, 2016)',77.7206, -68.5494,9],
+['Calving events near the terminus of Thwaites Glacier, Antarctica (Zoet, 2013)',-74.0000, -108.5000,2],
+['Glacier-generated earthquakes from Prince William Sound, Alaska (Wolf, 1986)',60.6905,-147.0971,9],
+['Seismic evidence for discrete glacier motion at the rock--ice interface (Weaver, 1979)',48.777, -121.813,6],
+['Seismic evidence for discrete glacier motion at the rock--ice interface (Weaver, 1979)',48.777, -121.813,5],
+['Mt. Saint Helens seismic events: Volcanic earthquakes or glacial noises? (Weaver, 1976)',46.1914, -122.1956,5],
+['Mt. Saint Helens seismic events: Volcanic earthquakes or glacial noises? (Weaver, 1976)',46.1914, -122.1956,6],
+['The seismic signature of glacier outburst floods (Walter, 2013)',58.4409, -134.5459,5],
+['Water-related seismic sources in glaciers and ice sheets (Walter, 2013)',69.2198, -51.0986,5],
+['Water-related seismic sources in glaciers and ice sheets (Walter, 2013)',46.5601, 8.5611,5], 
+['A three-dimensional calving model: numerical experiments on Johnsons Glacier, Livingston Island, Antarctica (Otero, 2010)',-62.6306, -60.2044,2],
+['Numerical modeling of seismic waves for estimating the influence of the Greenland ice sheet on observed seismograms (Toyokuni, 2015)',69.2198, -51.0986,4], 
+['Analysis of glacial earthquakes (Tsai, 2007)',69.2198, -51.0986,11], 
+['Quantifying the influence of sea ice on ocean microseism using observations from the Bering Sea, Alaska (Tsai, 2011)',56.9073, -178.1395,9], 
+['Possible mechanisms for glacial earthquakes (Tsai, 2008)',71.7069397,-42.6043015,11], 
+['May 30, 2015 Bonin Islands, Japan deep earthquake (Mw7. 8) recorded by broadband seismographic station on Greenland ice sheet (Seiji, 2015)',69.2198, -51.0986,10],
+['Spatial and temporal variations in Greenland glacial-earthquake activity, 1993--2010(Veitch, 2012)',71.706939,-42.6043015,11],
+['Snow avalanche energy estimation from seismic signal analysis (Vilajosana, 2007)',60.4720, 8.4689,4],
+['Analysis of low-frequency seismic signals generated during a multiple-iceberg calving event at Jakobshavn Isbr{\ae}, Greenland (Walter, 2012)',69.2198, -51.0986,2],
+['Complex force history of a calving-generated glacial earthquake derived from broadband seismic inversion (Sergeant, 2016)',69.2198, -51.0986,2], 
+['Microearthquakes and subglacial conditions (Smith, 2006)',-79, -81,5], 
+['Microearthquakes and subglacial conditions (Smith, 2006)',-79, -81,6], 
+['Icequakes! Microseismic; Sticky Spots in Rutford Ice Stream, West Antarctica (Smith, 2013)',-79, -81,5],
+['Icequakes! Microseismic; Sticky Spots in Rutford Ice Stream, West Antarctica (Smith, 2013)',-79, -81,6],
+['Mapping the ice-bed interface characteristics of Rutford Ice Stream, West Antarctica, using microseismicity (Smith, 2015)',-79, -81,5],
+['Mapping the ice-bed interface characteristics of Rutford Ice Stream, West Antarctica, using microseismicity (Smith, 2015)',-79, -81,6],
+['Capturing fracture propagation in a glacier using passive seismology (Smith, 2010)',61.0252,-145.6751,4],
+['Hydraulic transients: A seismic source in volcanoes and glaciers (Lawrence, 1979)',60.5000,-139.5000,5], 
+['Long-term accumulation and improvements in seismic event data for the polar regions by the International Seismological Centre (Storchak, 2015)',71.7069397,-42.6043015,11], 
+['Seismic emissions from a surging glacier: Bakaninbreen, Svalbard (Stuart, 2005)',77.6667, 17.5000,5],
+['Seismic emissions from a surging glacier: Bakaninbreen, Svalbard (Stuart, 2005)',77.6667, 17.5000,3],
+['Global climate imprint on seismic noise (Stutzmann, 2009)',-66.7500, 139.9167,9], 
+['Seismic events and rotation waves in the Hans Glacier, Spitsbergen, and the Pasterze Glacier, Austria (Teisseyre, 2004)',47.0893, 12.7129,6],
+['Seismic events and rotation waves in the Hans Glacier, Spitsbergen, and the Pasterze Glacier, Austria (Teisseyre, 2004)',47.0893, 12.7129,3],
+['Tensor decomposition exploiting diversity of propagation velocities: Application to localization of icequake events (Raimondi, 2016)',45.960278, 6.979444,11],
+['Characteristics of seismic and acoustic signals produced by calving, Bering Glacier, Alaska (Richardson, 2010)',60.3022, 143.4197,2],
+['Seismic moulin tremor (Roeoesli, 2016)',71.7069397,-42.6043015,4],
+['Seismic moulin tremor (Roeoesli, 2016)',71.7069397,-42.6043015,3],
+['Meltwater influences on deep stick-slip icequakes near the base of the Greenland Ice Sheet (Roeoesli, 2016)',71.7069397,-42.6043015,6],
+['A microearthquake survey in northwest British Columbia and southeast Alaska (Rogers,1976)',60.5000,-139.5000,11],
+['SEIMSMIC EXPLORATION IN COLD REGIONS (Roethlisberger, 1972)',-82.8628, 135.0000,11],
+['Observation of surface seismic activity changes of an Alpine glacier during a glacier-dammed lake outburst (Roux, 2010)',45.9668, 7.7969,3],
+['Deformation and seismic effects in the ice cover of Lake Baikal (Ruzhich, 2009)',53.5587, 108.1650,3],
+['Kinematic and seismic analysis of giant tabular iceberg breakup at Cape Adare, Antarctica (Martin, 2010)',-71.3362, 170.1439,8],
+['A two-station seismic method to localize glacier calving (Mei, 2016)',-82.8628, 135.0000,2], 
+['Monitoring southwest Greenland’s ice sheet melt with ambient seismic noise (Mordret, 2016)',69.2198, 51.0986,4],
+['Mendenhall Glacier (Juneau, Alaska) icequake seismicity and its relationship to the 2012 outburst flood and other environmental forcing (Morgan, 2013)',58.4409, -134.5459,3],
+['Reverse glacier motion during iceberg calving and the cause of glacial earthquakes (Murray, 2015)',69.2198, 51.0986,2], 
+['Seismic detection of transient changes beneath Black Rapids Glacier, Alaska, USA: I. Techniques and observations (Nolan, 1999)',63.4614, -146.1933,11],
+['Seismic signatures of iceberg failure, collapse and rolls (Norman, 2013)',74.6932, -68.4928,8], 
+['Seismic recording on drifting icebergs: Catching seismic waves, tsunamis and storms from Sumatra and elsewhere (Okal, 2006)',-81.5000, -175.0000,10],
+['Seismic attenuation in glacial ice: A proxy for englacial temperature (Peters, 2012)',69.2198, 51.0986,4], 
+['Implications of sea ice on Southern Ocean microseisms detected by a seismic array in West Antarctica (Pratt, 2017)',-83.666667, -145,9], 
+['Tabular icebergs in ocean waves (Kristensen, 1982)',-54.4296, -36.5879,8],
+['Tabular icebergs in ocean waves (Kristensen, 1982)',-54.4296, -36.5879,9],
+['On the recent calving of icebergs from the Ross Ice Shelf (Lazzara, 1999)',-81.500, -175.0000,2],
+['Investigations of the ice microtremors on Spitsbergen in 1962 (Lewandowska, 1964)',78.9014, 13.4839,11],
+['Bimodal pattern of seismicity detected at the ocean margin of an Antarctic ice shelf  (Lombardi, 2016)',-71.4000,-2.5167,5],
+['Bimodal pattern of seismicity detected at the ocean margin of an Antarctic ice shelf (Lombardi, 2016)',-71.4000,-2.5167,6],
+['Bimodal pattern of seismicity detected at the ocean margin of an Antarctic ice shelf (Lombardi, 2016)',-71.4000,-2.5167,9],
+['Waveform studies of strong cryoseismic sources near the top of the Antarctic ice sheet (Lough, 2013)',-85,-175,4],
+['Multi-method observation and analysis of a tsunami caused by glacier calving (Luthi, 2016)',69.8167, -50.0667,2], 
+['Catastrophic ice-shelf break-up by an ice-shelf-fragment-capsize mechanism (MacAyeal, 2003)',-67.5000,-62.5000,3],
+['Transoceanic wave propagation links iceberg calving margins of Antarctica with storms in tropics and Northern Hemisphere (MacAyeal, 2006)',-81.5000, -175.0000,9],
+['Ambient seismic, hydroacoustic, and flexural gravity wave noise on a tabular iceberg (MacAyeal, 2015)',-81.5000, -175.0000,8], 
+['Evidence for deep icequakes in an Alpine glacier (Deichmann)',46.5682, 8.2058,6],
+['Evidence for deep icequakes in an Alpine glacier (Deichmann)',46.5682, 8.2058,5],
+['Georadar and seismic investigations over the glacier de la Girose (French Alps) (Senechal, 2003)',45.0069, 6.2473,4],
+['Calving of large tabular icebergs from ice shelf rift systems (Joughin, 2005)',-81.5000, -175.0000,2],
+['Ice generated events in Perunika Glacier, recorded by LIVV stationNormal access (Georgieva, 2019)',-62.6306,-60.2044,11], 
+['Tidal and Structural Controls on Seismic Events Near the Grounding Line at Beardmore Glacier, Antarctica (Cooley, 2017)',-83.7500, 171.0000,9], 
+['Detection of Ice Wedge Cracking in Permafrost Using Miniature Accelerometers (ONeill, 2018)',78.1811, 16.2642,3], 
+['High‐Frequency (>2 Hz) Ambient Seismic Noise on High‐Melt Glaciers: Greens Function Estimation and Source Characterization (Preiswerk, 2018)',46.442222, 8.077222,11], 
+['The Microseismicity of Glacier Sliding (Walter, 2017)',71.7069, -42.6043,6], 
+['The Microseismicity of Glacier Sliding (Walter, 2017)',46.442222, 8.077222,6], 
+['Seismic Monitoring of Glacier Activity on Svalbard (SEISMOGLAC)- Report (Kohler, 2018)',77.8750, 20.9752,11], 
+['Seismology Gets Under the Skin of the Antarctic Ice Sheet (MacAyeal, 2018)',-81.5000, -175.0000,4],  
+['Near‐Surface Environmentally Forced Changes in the Ross Ice Shelf Observed With Ambient Seismic Noise (Chaput, 2018)',-81.5000, -175.0000,4], 
+['Interrogating a Surging Glacier With Seismic Interferometry (Aster, 2019)',60.3022, -143.4197,5], 
+['Interrogating a Surging Glacier With Seismic Interferometry (Aster, 2019)',60.3022, -143.4197,4], 
+['Nocturnal Thermal Fracturing of a Himalayan Debris‐Covered Glacier Revealed by Ambient Seismic Noise (Podolskiy, 2018)',28.5983, 83.9311,3], 
+['Assessment of glacial-earthquake source parameters (Veitch, 2017)',69.2198, -51.0986,2], 
+['Glaciohydraulic seismic tremors on an Alpine glacier (Lindner, 2019)',46.3815, 7.4973,4],
+['Seismoacoustic Monitoring Of The Cryosphere In The Vernadsky Station Region (Liashchuk, 2018)',-65.2407,-64.2547,8], 
+['Design of a seismo-acoustic station for Antarctica (Contrafatto, 2018)',-71.25, 163,11], 
+['Design of a seismo-acoustic station for Antarctica (Contrafatto, 2018)',-71.25, 163,11], 
+['Using Shear Waves to Characterize a Firn Aquifer on the Helheim Glacier in Southeast Greenland (Guandique, 2019)',66.3500, -38.2000,4], 
+['Moulins Detected as Ambient Noise Sources at the Kaskawulsh Glacier (Aso, 2016)',60.8000, -138.5833,4],
+['Microseismic Stick-Slip Motion of Alpine Glaciers (Graff, 2017)',46.442222, 8.077222,6], 
+['Tidal and spatial variability of flow speed and seismicity near the grounding zone of Beardmore Glacier, Antarctica (Cooley, 2019)',-83.7500, 171.0000,9],
+['Automating long-term glacier dynamics monitoring using single-station seismological observations and fuzzy logic classification: a case study from Spitsbergen (Gajek, 2017)',78.9014, 13.4839,2],
+['Repeating ice-earthquakes beneath David Glacier from the 2012-2015 TAMNNET array (Walter, 2017)',-75.3334, 161.2564,5],
+['Monitoring the englacial fracture state using virtual-reflector seismology (Lindner, 2017)',46.3815, 7.4973,4],
+['Monitoring and Structural Studies with Glacier Seismology (Preiswerk, 2018)',46.442222, 8.077222,11], 
+['Seismic observations of subglacial water discharge from glacier-dammed lake drainage at Lemon Creek Glacier, Alaska (Labedz, 2017)',58.3900, -134.3489,5],
+['Effects of geometry on the seismic wavefield of Alpine glaciers (Preiswerk, 2019)',46.442222, 8.077222,3],
+['Investigation of Firn Aquifer Structure in Southeastern Greenland Using Active Source Seismology (Montgomery, 2017)',69.2198, -51.0986,4],
+['Seismic Tremor Reveals Spatial Organization and Temporal Changes of Subglacial Water System (Vore, 2019)',58.2019,-134.4197,5],
+['Glacial Earthquakes and Precursory Seismicity Associated With Thwaites Glacier Calving (Winberry, 2020)',-74.0000,-108.5000,2],
+['Tidal and Thermal Stresses Drive Seismicity Along a Major Ross Ice Shelf Rift (Olinger, 2019)',-81.5,175,9],
+['Seismic monitoring of the Gugla rock glacier: observations and perspectives (Helmstetter, 2019)',46.1905,7.5449,11],
+['Seismic Noise Interferometry Reveals Transverse Drainage Configuration Beneath the Surging Bering Glacier (Zhan, 2019)',60.3022,-143.4197,4],
+['Seismic Noise Interferometry Reveals Transverse Drainage Configuration Beneath the Surging Bering Glacier (Zhan, 2019)',60.3022,-143.4197,5],
+['Investigating hydrological forcing of fast glacier flow in Greenland using passive seismology (Schoonman, 2019)',71.7069397,-42.6043015,4],
+['Investigating hydrological forcing of fast glacier flow in Greenland using passive seismology (Schoonman, 2019)',71.7069397,-42.6043015,5],
+['What do Subglacial Stick-Slip Asperities tell us about Stress Distributions and Dynamic Triggering on Natural Faults? (Graff, 2019)',46.8182,8.2275,6],
+['Tidal and spatial variability of flow speed and seismicity near the grounding zone of Beardmore Glacier, Antarctica (Cooley, 2019)',-83.75,171.0000,9],
+['Seismic characterization of a rapidly-rising jökulhlaup cycle at the A.P. Olsen Ice Cap, NE-Greenland (Behm, 2020)',74.650, -21.540,5],
+['Effects of geometry on the seismic wavefield of Alpine glaciers (Preiswerk, 2019)',46.8182,8.2275,4],
+['Interrogating a Surging Glacier With Seismic Interferometry (Aster, 2019)',60.3022,-143.4197,4],
+['Glacier dynamic ice loss quantified through seismic eyes (CALVINGSEIS) (Kohler, 2019)',77.8750,20.9752,2],
+['Constraining ice anisotropy and temperature from active source borehole seismology in the Ross Ice Shelf (Lutz, 2019)',-81.5,175.000,4],
+['Constraints on Terminus Dynamics at Greenland Glaciers From Small Glacial Earthquakes (Olsen, 2019)',69.1667,-49.9167,2],
+['Distributed Acoustic Sensing of Microseismic Sources and Wave Propagation in Glaciated Terrain (Walter, 2020)',46.8182,8.2275,6],
+['Numerical Modeling of Iceberg Capsizing Responsible for Glacial Earthquakes (Sergeant, 2018)',69.1667,-49.9167,8],
+['From diurnal to seasonal dynamics of the subglacial hydrology revealed by cryoseismology (Nanni, 2019)',46.8182,8.2275,4],
+['From diurnal to seasonal dynamics of the subglacial hydrology revealed by cryoseismology (Nanni, 2019)',46.8182,8.2275,5],
+['Using dense array seismology to observe glacier dynamics: the RESOLVE-Argentière project (Roux, 2019)',45.8326,6.8652,4],
+['Using dense array seismology to observe glacier dynamics: the RESOLVE-Argentière project (Roux, 2019)',45.8326,6.8652,5],
+['Using dense array seismology to observe glacier dynamics: the RESOLVE-Argentière project (Roux, 2019)',45.8326,6.8652,6],
+['Complex force history of a calving‐generated glacial earthquake derived from broadband seismic inversion (Sergeant, 2016)',69.1667,-49.9167,2],
+['Characterization of seasonal glacial seismicity from a single-station on-ice record at Holtedahlfonna, Svalbard (Koler, 2019)',77.8750,20.9752,3],
+['Investigating Volcanic and Glacial Processes Using Microseismicity (Hudson, 2019)',64.9631,-19.0208,11]
+
+        ];
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+           zoom: 1,
+           center: new google.maps.LatLng(-42, 151.28),
+           mapTypeId: 'satellite',
+        });
+
+        var markers = [];
+        var reflist = [];
+        var i, newMarker;
+        function offset() {
+          var meter =  0.00001; //https://en.wikipedia.org/wiki/Decimal_degrees 
+          random_value = Math.random() + meter
+          return random_value
+          }
+        
+        var infowindow = new google.maps.InfoWindow({ maxWidth: 200 });
+        for (i = 0; i < events_all.length; i++) {
+          if (i % 2 == 0) {
+            events_all[i][1] = events_all[i][1]+offset()/2;} // offset everything to account for duplicates
+            else {events_all[i][2] = events_all[i][2]+offset();} //stagger lon and lat stagger for extra randomness :)
+         
+
+          newMarker = new google.maps.Marker({
+          position: new google.maps.LatLng(events_all[i][1], events_all[i][2]),
+          map: map,
+          title: events_all[i][0],
+          optimized: false
+
+          });
+
+          google.maps.event.addListener(newMarker, 'click', function () {
+            infowindow.setContent('<p>' + this.title + '</p>');
+            infowindow.open(map, this);
+        });
+
+        newMarker.category = events_all[i][3];
+        newMarker.setVisible(false);
+        markers.push(newMarker);
+
+        $('#map-canvas').attr("data-markers",markers.length);
+        $('.marker-count span').html(markers.length); 
+
+
+
+        }
+
+
+
+         function displayMarkers(obj,category) {
+             var i;
+             for (i = 0; i < markers.length; i++)
+             {   
+                     if (markers[i].category === category) {
+                         if ($(obj).is(":checked")) {
+                             markers[i].setVisible(true);
+                         } else {
+                             markers[i].setVisible(false);    
+                         }
+                     } 
+                     //else 
+                     //{
+                     //    markers[i].setVisible(false);
+                     //}
+
+                 }
+         }    
+
+         function unDisplayMarkers(obj) {
+             var i;
+             for (i = 0; i < markers.length; i++)
+             {   
+                     if (markers[i].category === category) {
+                         if ($(obj).is(":checked")) {
+                             markers[i].setVisible(false);
+                         } else {
+                             markers[i].setVisible(false);    
+                         }
+                     } 
+                     //else 
+                     //{
+                     //    markers[i].setVisible(false);
+                     //}
+
+                 }
+         }
+
+
+         function displayTimeMarkers(obj) {
+             var i;
+             for (i = 0; i < markers.length; i++)
+             {   
+                     if (markers[i].category === category) {
+                         if ($(obj).is(":checked")) {
+                             markers[i].setVisible(false);
+                         } else {
+                             markers[i].setVisible(false);    
+                         }
+                     } 
+                     //else 
+                     //{
+                     //    markers[i].setVisible(false);
+                     //}
+
+                 }
+         }
+       </script> 
+
+       </body> 
+       <footer>
+        <p style="color:#f2f2f2;">Created by: Becca Latto</p>
+        <p style="color:#f2f2f2;">Acknowledgements: This type of site could not have been put together without the incredibly comprehensive <a target="_blank" href="https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1002/2016RG000526"> Cryoseismology paper by Evgeny A. Podolskiy and Fabian Walter </a>. This site is powered by Amazon Web Services and uses the Google Maps API.</p>
+              </footer>
+
+
+       </html>
